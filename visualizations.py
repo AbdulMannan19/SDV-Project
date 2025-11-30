@@ -77,9 +77,12 @@ class Visualizations:
         return fig.to_html(full_html=False, include_plotlyjs=False)
     
     def create_campaign_type_bar(self):
-        """Create bar chart comparing campaign types"""
+        """Create bar chart comparing campaign types with profit"""
         roi_data = self.processor.get_roi_by_campaign_type()
         df = pd.DataFrame(roi_data)
+        
+        # Calculate profit
+        df['Profit'] = df['Revenue'] - df['Marketing_Spend']
         
         fig = go.Figure()
         
@@ -87,43 +90,90 @@ class Visualizations:
             x=df['Campaign_Type'],
             y=df['Revenue'],
             name='Revenue',
-            marker_color='lightblue'
+            marker_color='#4CAF50',
+            text=df['Revenue'].apply(lambda x: f'${x:,.0f}'),
+            textposition='auto'
         ))
         
         fig.add_trace(go.Bar(
             x=df['Campaign_Type'],
             y=df['Marketing_Spend'],
             name='Marketing Spend',
-            marker_color='coral'
+            marker_color='#FF6B6B',
+            text=df['Marketing_Spend'].apply(lambda x: f'${x:,.0f}'),
+            textposition='auto'
+        ))
+        
+        fig.add_trace(go.Bar(
+            x=df['Campaign_Type'],
+            y=df['Profit'],
+            name='Profit',
+            marker_color='#2196F3',
+            text=df['Profit'].apply(lambda x: f'${x:,.0f}'),
+            textposition='auto'
         ))
         
         fig.update_layout(
-            title='Revenue vs Marketing Spend by Campaign Type',
+            title='Campaign Performance: Revenue, Spend & Profit',
             xaxis_title='Campaign Type',
             yaxis_title='Amount ($)',
             barmode='group',
-            height=400
+            height=450,
+            showlegend=True,
+            legend=dict(orientation='h', yanchor='bottom', y=1.02, xanchor='right', x=1)
         )
         
         return fig.to_html(full_html=False, include_plotlyjs=False)
     
     def create_category_performance(self):
-        """Create horizontal bar chart for category performance"""
+        """Create grouped bar chart showing Revenue, Spend & Profit by category"""
         roi_data = self.processor.get_roi_by_category()
-        df = pd.DataFrame(roi_data).sort_values('ROI', ascending=True)
+        df = pd.DataFrame(roi_data).sort_values('ROI', ascending=False)
         
-        fig = px.bar(
-            df,
-            y='ProductCategory',
-            x='ROI',
+        # Calculate profit
+        df['Profit'] = df['Revenue'] - df['Marketing_Spend']
+        
+        fig = go.Figure()
+        
+        fig.add_trace(go.Bar(
+            y=df['ProductCategory'],
+            x=df['Revenue'],
+            name='Revenue',
             orientation='h',
-            title='ROI by Product Category',
-            labels={'ROI': 'ROI (%)', 'ProductCategory': 'Product Category'},
-            color='ROI',
-            color_continuous_scale='RdYlGn'
-        )
+            marker_color='#4CAF50',
+            text=df['Revenue'].apply(lambda x: f'${x:,.0f}'),
+            textposition='auto'
+        ))
         
-        fig.update_layout(height=400)
+        fig.add_trace(go.Bar(
+            y=df['ProductCategory'],
+            x=df['Marketing_Spend'],
+            name='Marketing Spend',
+            orientation='h',
+            marker_color='#FF6B6B',
+            text=df['Marketing_Spend'].apply(lambda x: f'${x:,.0f}'),
+            textposition='auto'
+        ))
+        
+        fig.add_trace(go.Bar(
+            y=df['ProductCategory'],
+            x=df['Profit'],
+            name='Profit',
+            orientation='h',
+            marker_color='#2196F3',
+            text=df['Profit'].apply(lambda x: f'${x:,.0f}'),
+            textposition='auto'
+        ))
+        
+        fig.update_layout(
+            title='Product Category Performance: Revenue, Spend & Profit',
+            xaxis_title='Amount ($)',
+            yaxis_title='Product Category',
+            barmode='group',
+            height=450,
+            showlegend=True,
+            legend=dict(orientation='h', yanchor='bottom', y=1.02, xanchor='right', x=1)
+        )
         
         return fig.to_html(full_html=False, include_plotlyjs=False)
     

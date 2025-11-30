@@ -1,61 +1,61 @@
 Campaign_ID,Campaign_Type,Marketing_Spend,Target_Region,Target_Product_Category,Start_Date,End_Date
-1,Social Media,15000,USA,Smartphones,2021-01-01,2021-03-31
-2,Digital Ads,22000,USA,Laptops,2021-01-15,2021-04-15
-3,Print,8000,Canada,Gaming Consoles,2021-02-01,2021-04-30
-4,Social Media,12000,Mexico,Audio Devices,2021-03-01,2021-05-31
-5,Digital Ads,18000,Germany,Televisions,2021-04-01,2021-06-30
-6,Print,9500,UK,Smartphones,2021-05-01,2021-07-31
-7,Social Media,16000,USA,Gaming Consoles,2021-06-01,2021-08-31
-8,Digital Ads,25000,Canada,Laptops,2021-07-01,2021-09-30
-9,Print,7000,Mexico,Televisions,2021-08-01,2021-10-31
-10,Social Media,14000,Germany,Smartphones,2021-09-01,2021-11-30
-11,Digital Ads,20000,UK,Audio Devices,2021-10-01,2021-12-31
-12,Print,11000,USA,Televisions,2021-11-01,2022-01-31
-13,Social Media,17000,Canada,Smartphones,2022-01-01,2022-03-31
-14,Digital Ads,23000,Mexico,Laptops,2022-02-01,2022-04-30
-15,Print,8500,Germany,Gaming Consoles,2022-03-01,2022-05-31
-16,Social Media,13000,UK,Televisions,2022-04-01,2022-06-30
-17,Digital Ads,19000,USA,Audio Devices,2022-05-01,2022-07-31
-18,Print,10000,Canada,Smartphones,2022-06-01,2022-08-31
-19,Social Media,15500,Mexico,Gaming Consoles,2022-07-01,2022-09-30
-20,Digital Ads,21000,Germany,Laptops,2022-08-01,2022-10-31
-21,Print,9000,UK,Televisions,2022-09-01,2022-11-30
-22,Social Media,16500,USA,Smartphones,2022-10-01,2022-12-31
-23,Digital Ads,24000,Canada,Televisions,2022-11-01,2023-01-31
-24,Print,7500,Mexico,Audio Devices,2022-12-01,2023-02-28
-25,Social Media,14500,Germany,Gaming Consoles,2023-01-01,2023-03-31
-26,Digital Ads,22500,UK,Laptops,2023-02-01,2023-04-30
-27,Print,10500,USA,Gaming Consoles,2023-03-01,2023-05-31
-28,Social Media,18000,Canada,Audio Devices,2023-04-01,2023-06-30
-29,Digital Ads,26000,Mexico,Smartphones,2023-05-01,2023-07-31
-30,Print,8000,Germany,Televisions,2023-06-01,2023-08-31
-31,Social Media,15000,UK,Smartphones,2023-07-01,2023-09-30
-32,Digital Ads,20000,USA,Laptops,2023-08-01,2023-10-31
-33,Print,9500,Canada,Gaming Consoles,2023-09-01,2023-11-30
-34,Social Media,17500,Mexico,Televisions,2023-10-01,2023-12-31
-35,Digital Ads,23500,Germany,Audio Devices,2023-11-01,2024-01-31
-36,Print,11000,UK,Gaming Consoles,2023-12-01,2024-02-29
-37,Social Media,16000,USA,Televisions,2024-01-01,2024-03-31
-38,Digital Ads,21500,Canada,Smartphones,2024-02-01,2024-04-30
-39,Print,8500,Mexico,Laptops,2024-03-01,2024-05-31
-40,Social Media,14000,Germany,Smartphones,2024-04-01,2024-06-30
-41,Digital Ads,19500,UK,Audio Devices,2024-05-01,2024-07-31
-42,Print,10000,USA,Gaming Consoles,2024-06-01,2024-08-31
-43,Social Media,15500,Canada,Televisions,2024-07-01,2024-09-30
-44,Digital Ads,22000,Mexico,Gaming Consoles,2024-08-01,2024-10-31
-45,Print,9000,Germany,Laptops,2024-09-01,2024-11-30
-46,Social Media,17000,UK,Televisions,2024-10-01,2024-12-31
-47,Digital Ads,24500,USA,Smartphones,2024-11-01,2025-01-31
-48,Print,7500,Canada,Audio Devices,2024-12-01,2025-02-28
-49,Social Media,13500,Mexico,Smartphones,2025-01-01,2025-03-31
-50,Digital Ads,20500,Germany,Gaming Consoles,2025-02-01,2025-04-30
-51,Print,10500,UK,Laptops,2025-03-01,2025-05-31
-52,Social Media,18500,USA,Audio Devices,2025-04-01,2025-06-30
-53,Digital Ads,25000,Canada,Laptops,2025-05-01,2025-07-31
-54,Print,8500,Mexico,Televisions,2025-06-01,2025-08-31
-55,Social Media,16500,Germany,Televisions,2025-07-01,2025-09-30
-56,Digital Ads,23000,UK,Smartphones,2025-08-01,2025-10-31
-57,Print,9500,USA,Gaming Consoles,2025-09-01,2025-11-30
-58,Social Media,15000,Canada,Smartphones,2025-10-01,2025-12-31
-59,Digital Ads,21000,Mexico,Audio Devices,2025-11-01,2026-01-31
-60,Print,11500,Germany,Gaming Consoles,2025-12-01,2026-02-28
+1,Social Media,1500,USA,Smartphones,2021-01-01,2021-03-31
+2,Digital Ads,2200,USA,Laptops,2021-01-15,2021-04-15
+3,Print,800,Canada,Gaming Consoles,2021-02-01,2021-04-30
+4,Social Media,1200,Mexico,Audio Devices,2021-03-01,2021-05-31
+5,Digital Ads,1800,Germany,Televisions,2021-04-01,2021-06-30
+6,Print,950,UK,Smartphones,2021-05-01,2021-07-31
+7,Social Media,1600,USA,Gaming Consoles,2021-06-01,2021-08-31
+8,Digital Ads,2500,Canada,Laptops,2021-07-01,2021-09-30
+9,Print,700,Mexico,Televisions,2021-08-01,2021-10-31
+10,Social Media,1400,Germany,Smartphones,2021-09-01,2021-11-30
+11,Digital Ads,2000,UK,Audio Devices,2021-10-01,2021-12-31
+12,Print,1100,USA,Televisions,2021-11-01,2022-01-31
+13,Social Media,1700,Canada,Smartphones,2022-01-01,2022-03-31
+14,Digital Ads,2300,Mexico,Laptops,2022-02-01,2022-04-30
+15,Print,850,Germany,Gaming Consoles,2022-03-01,2022-05-31
+16,Social Media,1300,UK,Televisions,2022-04-01,2022-06-30
+17,Digital Ads,1900,USA,Audio Devices,2022-05-01,2022-07-31
+18,Print,1000,Canada,Smartphones,2022-06-01,2022-08-31
+19,Social Media,1550,Mexico,Gaming Consoles,2022-07-01,2022-09-30
+20,Digital Ads,2100,Germany,Laptops,2022-08-01,2022-10-31
+21,Print,900,UK,Televisions,2022-09-01,2022-11-30
+22,Social Media,1650,USA,Smartphones,2022-10-01,2022-12-31
+23,Digital Ads,2400,Canada,Televisions,2022-11-01,2023-01-31
+24,Print,750,Mexico,Audio Devices,2022-12-01,2023-02-28
+25,Social Media,1450,Germany,Gaming Consoles,2023-01-01,2023-03-31
+26,Digital Ads,2250,UK,Laptops,2023-02-01,2023-04-30
+27,Print,1050,USA,Gaming Consoles,2023-03-01,2023-05-31
+28,Social Media,1800,Canada,Audio Devices,2023-04-01,2023-06-30
+29,Digital Ads,2600,Mexico,Smartphones,2023-05-01,2023-07-31
+30,Print,800,Germany,Televisions,2023-06-01,2023-08-31
+31,Social Media,1500,UK,Smartphones,2023-07-01,2023-09-30
+32,Digital Ads,2000,USA,Laptops,2023-08-01,2023-10-31
+33,Print,950,Canada,Gaming Consoles,2023-09-01,2023-11-30
+34,Social Media,1750,Mexico,Televisions,2023-10-01,2023-12-31
+35,Digital Ads,2350,Germany,Audio Devices,2023-11-01,2024-01-31
+36,Print,1100,UK,Gaming Consoles,2023-12-01,2024-02-29
+37,Social Media,1600,USA,Televisions,2024-01-01,2024-03-31
+38,Digital Ads,2150,Canada,Smartphones,2024-02-01,2024-04-30
+39,Print,850,Mexico,Laptops,2024-03-01,2024-05-31
+40,Social Media,1400,Germany,Smartphones,2024-04-01,2024-06-30
+41,Digital Ads,1950,UK,Audio Devices,2024-05-01,2024-07-31
+42,Print,1000,USA,Gaming Consoles,2024-06-01,2024-08-31
+43,Social Media,1550,Canada,Televisions,2024-07-01,2024-09-30
+44,Digital Ads,2200,Mexico,Gaming Consoles,2024-08-01,2024-10-31
+45,Print,900,Germany,Laptops,2024-09-01,2024-11-30
+46,Social Media,1700,UK,Televisions,2024-10-01,2024-12-31
+47,Digital Ads,2450,USA,Smartphones,2024-11-01,2025-01-31
+48,Print,750,Canada,Audio Devices,2024-12-01,2025-02-28
+49,Social Media,1350,Mexico,Smartphones,2025-01-01,2025-03-31
+50,Digital Ads,2050,Germany,Gaming Consoles,2025-02-01,2025-04-30
+51,Print,1050,UK,Laptops,2025-03-01,2025-05-31
+52,Social Media,1850,USA,Audio Devices,2025-04-01,2025-06-30
+53,Digital Ads,2500,Canada,Laptops,2025-05-01,2025-07-31
+54,Print,850,Mexico,Televisions,2025-06-01,2025-08-31
+55,Social Media,1650,Germany,Televisions,2025-07-01,2025-09-30
+56,Digital Ads,2300,UK,Smartphones,2025-08-01,2025-10-31
+57,Print,950,USA,Gaming Consoles,2025-09-01,2025-11-30
+58,Social Media,1500,Canada,Smartphones,2025-10-01,2025-12-31
+59,Digital Ads,2100,Mexico,Audio Devices,2025-11-01,2026-01-31
+60,Print,1150,Germany,Gaming Consoles,2025-12-01,2026-02-28
