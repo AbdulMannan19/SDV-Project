@@ -77,7 +77,7 @@ class Visualizations:
         return fig.to_html(full_html=False, include_plotlyjs=False)
     
     def create_campaign_type_bar(self):
-        """Create bar chart comparing campaign types with profit"""
+        """Create interactive bar chart comparing campaign types with profit"""
         roi_data = self.processor.get_roi_by_campaign_type()
         df = pd.DataFrame(roi_data)
         
@@ -92,7 +92,8 @@ class Visualizations:
             name='Revenue',
             marker_color='#4CAF50',
             text=df['Revenue'].apply(lambda x: f'${x:,.0f}'),
-            textposition='auto'
+            textposition='auto',
+            hovertemplate='<b>%{x}</b><br>Revenue: $%{y:,.0f}<extra></extra>'
         ))
         
         fig.add_trace(go.Bar(
@@ -101,7 +102,8 @@ class Visualizations:
             name='Marketing Spend',
             marker_color='#FF6B6B',
             text=df['Marketing_Spend'].apply(lambda x: f'${x:,.0f}'),
-            textposition='auto'
+            textposition='auto',
+            hovertemplate='<b>%{x}</b><br>Marketing Spend: $%{y:,.0f}<extra></extra>'
         ))
         
         fig.add_trace(go.Bar(
@@ -110,23 +112,34 @@ class Visualizations:
             name='Profit',
             marker_color='#2196F3',
             text=df['Profit'].apply(lambda x: f'${x:,.0f}'),
-            textposition='auto'
+            textposition='auto',
+            hovertemplate='<b>%{x}</b><br>Profit: $%{y:,.0f}<extra></extra>'
         ))
         
         fig.update_layout(
-            title='Campaign Performance: Revenue, Spend & Profit',
+            title='Campaign Performance: Revenue, Spend & Profit (Click legend to filter)',
             xaxis_title='Campaign Type',
             yaxis_title='Amount ($)',
             barmode='group',
             height=450,
             showlegend=True,
-            legend=dict(orientation='h', yanchor='bottom', y=1.02, xanchor='right', x=1)
+            legend=dict(
+                orientation='h',
+                yanchor='bottom',
+                y=1.02,
+                xanchor='right',
+                x=1
+            ),
+            hovermode='x unified'
         )
+        
+        # Enable click-on-legend to show/hide traces
+        fig.update_layout(legend=dict(itemclick='toggle', itemdoubleclick='toggleothers'))
         
         return fig.to_html(full_html=False, include_plotlyjs=False)
     
     def create_category_performance(self):
-        """Create grouped bar chart showing Revenue, Spend & Profit by category"""
+        """Create interactive grouped bar chart showing Revenue, Spend & Profit by category"""
         roi_data = self.processor.get_roi_by_category()
         df = pd.DataFrame(roi_data).sort_values('ROI', ascending=False)
         
@@ -142,7 +155,8 @@ class Visualizations:
             orientation='h',
             marker_color='#4CAF50',
             text=df['Revenue'].apply(lambda x: f'${x:,.0f}'),
-            textposition='auto'
+            textposition='auto',
+            hovertemplate='<b>%{y}</b><br>Revenue: $%{x:,.0f}<extra></extra>'
         ))
         
         fig.add_trace(go.Bar(
@@ -152,7 +166,8 @@ class Visualizations:
             orientation='h',
             marker_color='#FF6B6B',
             text=df['Marketing_Spend'].apply(lambda x: f'${x:,.0f}'),
-            textposition='auto'
+            textposition='auto',
+            hovertemplate='<b>%{y}</b><br>Marketing Spend: $%{x:,.0f}<extra></extra>'
         ))
         
         fig.add_trace(go.Bar(
@@ -162,18 +177,29 @@ class Visualizations:
             orientation='h',
             marker_color='#2196F3',
             text=df['Profit'].apply(lambda x: f'${x:,.0f}'),
-            textposition='auto'
+            textposition='auto',
+            hovertemplate='<b>%{y}</b><br>Profit: $%{x:,.0f}<extra></extra>'
         ))
         
         fig.update_layout(
-            title='Product Category Performance: Revenue, Spend & Profit',
+            title='Product Category Performance: Revenue, Spend & Profit (Click legend to filter)',
             xaxis_title='Amount ($)',
             yaxis_title='Product Category',
             barmode='group',
             height=450,
             showlegend=True,
-            legend=dict(orientation='h', yanchor='bottom', y=1.02, xanchor='right', x=1)
+            legend=dict(
+                orientation='h',
+                yanchor='bottom',
+                y=1.02,
+                xanchor='right',
+                x=1
+            ),
+            hovermode='y unified'
         )
+        
+        # Enable click-on-legend to show/hide traces
+        fig.update_layout(legend=dict(itemclick='toggle', itemdoubleclick='toggleothers'))
         
         return fig.to_html(full_html=False, include_plotlyjs=False)
     
@@ -190,15 +216,21 @@ class Visualizations:
         }
     
     def create_altair_region_chart(self):
-        """Create Altair chart for regional comparison"""
+        """Create simple Altair chart showing ROI by region"""
         roi_data = self.processor.get_roi_by_region()
         df = pd.DataFrame(roi_data)
         
-        chart = alt.Chart(df).mark_bar().encode(
-            x=alt.X('Country:N', title='Country'),
+        chart = alt.Chart(df).mark_bar(
+            color='#2196F3'
+        ).encode(
+            x=alt.X('Country:N', title='Country', sort='-y'),
             y=alt.Y('ROI:Q', title='ROI (%)'),
-            color=alt.Color('ROI:Q', scale=alt.Scale(scheme='redyellowgreen')),
-            tooltip=['Country', 'Revenue', 'Marketing_Spend', 'ROI']
+            tooltip=[
+                alt.Tooltip('Country:N', title='Country'),
+                alt.Tooltip('Revenue:Q', title='Revenue', format='$,.0f'),
+                alt.Tooltip('Marketing_Spend:Q', title='Marketing Spend', format='$,.0f'),
+                alt.Tooltip('ROI:Q', title='ROI (%)', format='.1f')
+            ]
         ).properties(
             title='ROI Comparison by Region',
             width=600,
