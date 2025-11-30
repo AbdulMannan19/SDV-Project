@@ -1,0 +1,752 @@
+OrderID,OrderDate,Country,ProductCategory,ProductName,UnitsSold,UnitPrice,Revenue
+1,2022-06-21,USA,Smartphones,OnePlus 11,5,859.9,4299.5
+2,2023-02-19,Mexico,Televisions,LG OLED,3,1197.84,3593.52
+3,2023-07-06,Mexico,Audio Devices,Bose QC 45,4,268.09,1072.36
+4,2021-01-15,UK,Smartphones,OnePlus 11,2,733.31,1466.62
+5,2022-11-03,USA,Laptops,MacBook Air,1,1945.17,1945.17
+6,2021-06-13,USA,Laptops,Lenovo ThinkPad,5,1530.21,7651.05
+7,2021-12-25,Canada,Gaming Consoles,Nintendo Switch,5,474.45,2372.25
+8,2021-05-03,Canada,Gaming Consoles,Steam Deck,1,576.36,576.36
+9,2021-06-12,Canada,Smartphones,OnePlus 11,4,1182.88,4731.52
+10,2025-05-04,Germany,Televisions,LG OLED,2,1997.08,3994.16
+11,2024-01-10,Germany,Smartphones,Pixel 8,4,624.2,2496.8
+12,2025-10-05,Mexico,Audio Devices,Sony WH-1000XM5,5,253.42,1267.1
+13,2025-10-16,Mexico,Audio Devices,Sony WH-1000XM5,3,278.12,834.36
+14,2023-08-23,USA,Smartphones,OnePlus 11,1,1154.18,1154.18
+15,2023-09-08,USA,Laptops,Lenovo ThinkPad,4,1960.73,7842.92
+16,2024-06-05,Germany,Audio Devices,Sony WH-1000XM5,1,374.13,374.13
+17,2021-01-13,USA,Gaming Consoles,Nintendo Switch,3,518.91,1556.73
+18,2022-06-12,Canada,Audio Devices,Sony WH-1000XM5,4,454.0,1816.0
+19,2023-05-26,Germany,Audio Devices,AirPods Pro,3,492.16,1476.48
+20,2021-02-10,USA,Televisions,TCL 6-Series,2,1794.86,3589.72
+21,2022-01-19,Canada,Televisions,LG OLED,3,1664.04,4992.12
+22,2022-12-22,USA,Televisions,Samsung QLED,3,2330.52,6991.56
+23,2022-04-18,USA,Gaming Consoles,Nintendo Switch,5,263.38,1316.9
+24,2021-06-07,Mexico,Televisions,TCL 6-Series,3,558.89,1676.67
+25,2024-07-30,Canada,Smartphones,OnePlus 11,3,773.94,2321.82
+26,2022-12-26,USA,Gaming Consoles,Steam Deck,5,451.93,2259.65
+27,2022-01-08,USA,Televisions,TCL 6-Series,3,2005.35,6016.05
+28,2024-02-11,Canada,Televisions,LG OLED,1,1233.3,1233.3
+29,2023-01-24,Canada,Gaming Consoles,Steam Deck,5,355.58,1777.9
+30,2025-11-17,USA,Televisions,TCL 6-Series,4,1618.64,6474.56
+31,2024-11-13,USA,Audio Devices,Sony WH-1000XM5,3,132.73,398.19
+32,2021-10-22,USA,Televisions,LG OLED,4,948.71,3794.84
+33,2021-08-11,Germany,Smartphones,Pixel 8,5,752.61,3763.05
+34,2024-05-05,Canada,Laptops,MacBook Air,4,1891.53,7566.12
+35,2021-09-08,Mexico,Laptops,HP Spectre,4,1950.29,7801.16
+36,2024-01-23,USA,Laptops,Dell XPS 13,4,893.28,3573.12
+37,2024-05-22,USA,Audio Devices,Sony WH-1000XM5,4,217.95,871.8
+38,2024-05-21,Mexico,Gaming Consoles,PS5,2,495.46,990.92
+39,2023-05-11,Mexico,Laptops,HP Spectre,3,1084.57,3253.71
+40,2023-08-23,USA,Gaming Consoles,Xbox Series X,2,534.28,1068.56
+41,2022-09-14,Canada,Smartphones,Samsung S23,5,986.63,4933.15
+42,2022-03-21,Canada,Smartphones,Pixel 8,5,765.8,3829.0
+43,2023-08-03,UK,Smartphones,Pixel 8,4,845.97,3383.88
+44,2023-11-05,UK,Televisions,LG OLED,4,1620.48,6481.92
+45,2025-09-24,Germany,Laptops,Dell XPS 13,5,1696.87,8484.35
+46,2024-03-02,Germany,Audio Devices,AirPods Pro,4,257.67,1030.68
+47,2023-08-30,UK,Laptops,HP Spectre,3,1234.11,3702.33
+48,2022-12-14,USA,Audio Devices,Bose QC 45,4,435.45,1741.8
+49,2022-11-19,USA,Audio Devices,JBL Charge 5,3,492.07,1476.21
+50,2021-01-21,USA,Laptops,HP Spectre,3,1861.68,5585.04
+51,2023-04-09,USA,Smartphones,Samsung S23,2,653.31,1306.62
+52,2024-07-21,Canada,Smartphones,Samsung S23,1,1093.52,1093.52
+53,2022-08-27,UK,Televisions,TCL 6-Series,2,1630.98,3261.96
+54,2023-03-07,Mexico,Smartphones,Pixel 8,5,825.02,4125.1
+55,2022-05-15,USA,Smartphones,Samsung S23,5,1183.28,5916.4
+56,2023-10-21,Germany,Laptops,HP Spectre,4,1029.48,4117.92
+57,2022-12-09,Germany,Laptops,MacBook Air,5,1510.71,7553.55
+58,2021-07-31,Germany,Gaming Consoles,Nintendo Switch,1,516.52,516.52
+59,2023-08-05,USA,Gaming Consoles,Steam Deck,2,540.11,1080.22
+60,2025-04-21,Mexico,Laptops,HP Spectre,5,1147.23,5736.15
+61,2021-10-08,Mexico,Televisions,Samsung QLED,3,2246.28,6738.84
+62,2023-07-11,UK,Laptops,MacBook Air,5,1243.32,6216.6
+63,2022-06-25,USA,Televisions,Sony Bravia,4,885.47,3541.88
+64,2022-12-03,Germany,Smartphones,Pixel 8,3,1056.14,3168.42
+65,2021-09-26,UK,Smartphones,OnePlus 11,4,921.9,3687.6
+66,2023-09-02,Canada,Smartphones,OnePlus 11,3,637.52,1912.56
+67,2021-09-19,Mexico,Televisions,Sony Bravia,5,1459.34,7296.7
+68,2025-05-08,USA,Smartphones,Pixel 8,1,1168.23,1168.23
+69,2021-03-04,USA,Laptops,Dell XPS 13,2,1004.51,2009.02
+70,2021-10-14,USA,Televisions,Sony Bravia,4,1519.19,6076.76
+71,2024-12-04,UK,Laptops,Lenovo ThinkPad,2,1206.12,2412.24
+72,2023-02-26,Germany,Smartphones,Pixel 8,5,909.21,4546.05
+73,2021-08-14,USA,Smartphones,OnePlus 11,1,1078.83,1078.83
+74,2023-01-27,USA,Smartphones,Pixel 8,2,672.5,1345.0
+75,2021-08-16,USA,Laptops,MacBook Air,5,1662.71,8313.55
+76,2023-09-18,Canada,Televisions,TCL 6-Series,2,2198.74,4397.48
+77,2024-08-06,Mexico,Televisions,LG OLED,4,2224.07,8896.28
+78,2022-05-08,USA,Smartphones,Pixel 8,3,697.28,2091.84
+79,2024-09-24,Mexico,Audio Devices,Sony WH-1000XM5,4,256.09,1024.36
+80,2025-06-18,Mexico,Laptops,Dell XPS 13,4,1702.67,6810.68
+81,2022-11-01,UK,Laptops,Lenovo ThinkPad,4,977.27,3909.08
+82,2021-10-11,USA,Audio Devices,AirPods Pro,2,361.34,722.68
+83,2023-10-12,USA,Gaming Consoles,PS5,2,431.2,862.4
+84,2024-03-27,USA,Smartphones,OnePlus 11,5,867.06,4335.3
+85,2023-08-27,Canada,Televisions,Samsung QLED,4,1628.38,6513.52
+86,2024-06-18,USA,Smartphones,OnePlus 11,4,650.98,2603.92
+87,2024-01-26,Mexico,Smartphones,Samsung S23,1,1011.78,1011.78
+88,2025-05-09,Canada,Televisions,Samsung QLED,4,1527.93,6111.72
+89,2025-06-04,USA,Gaming Consoles,Steam Deck,1,381.2,381.2
+90,2023-11-13,USA,Smartphones,OnePlus 11,4,932.75,3731.0
+91,2023-05-09,UK,Smartphones,Samsung S23,3,1054.81,3164.43
+92,2021-06-12,Mexico,Televisions,Samsung QLED,4,2103.55,8414.2
+93,2023-04-09,USA,Laptops,MacBook Air,2,1074.05,2148.1
+94,2024-11-22,Germany,Televisions,LG OLED,1,1559.97,1559.97
+95,2023-09-24,USA,Gaming Consoles,Nintendo Switch,5,590.01,2950.05
+96,2025-11-06,Canada,Smartphones,iPhone 14,4,1102.38,4409.52
+97,2024-11-16,Canada,Televisions,LG OLED,5,2282.5,11412.5
+98,2021-03-14,UK,Smartphones,Pixel 8,3,755.05,2265.15
+99,2024-05-26,Germany,Gaming Consoles,PS5,2,366.15,732.3
+100,2025-03-23,Germany,Audio Devices,AirPods Pro,4,242.16,968.64
+101,2021-11-12,Mexico,Gaming Consoles,Xbox Series X,5,495.53,2477.65
+102,2025-12-26,Germany,Gaming Consoles,Nintendo Switch,1,408.34,408.34
+103,2021-07-04,UK,Televisions,TCL 6-Series,5,2087.88,10439.4
+104,2021-06-04,Canada,Smartphones,OnePlus 11,3,899.64,2698.92
+105,2025-11-11,Mexico,Gaming Consoles,Steam Deck,2,585.52,1171.04
+106,2023-05-19,Canada,Smartphones,iPhone 14,2,1178.76,2357.52
+107,2023-06-18,Germany,Laptops,HP Spectre,4,1245.62,4982.48
+108,2024-10-19,Canada,Laptops,Lenovo ThinkPad,3,1525.27,4575.81
+109,2024-11-28,USA,Gaming Consoles,PS5,4,420.76,1683.04
+110,2023-09-21,USA,Gaming Consoles,Steam Deck,1,284.44,284.44
+111,2025-01-31,Germany,Televisions,LG OLED,5,1542.21,7711.05
+112,2021-01-31,USA,Smartphones,Pixel 8,4,916.24,3664.96
+113,2024-12-07,USA,Audio Devices,Bose QC 45,1,229.11,229.11
+114,2024-02-12,UK,Gaming Consoles,PS5,1,577.74,577.74
+115,2023-06-06,USA,Televisions,TCL 6-Series,4,1798.19,7192.76
+116,2025-01-29,Canada,Televisions,TCL 6-Series,3,1126.11,3378.33
+117,2023-02-20,USA,Televisions,LG OLED,1,1416.77,1416.77
+118,2021-08-21,USA,Audio Devices,Bose QC 45,2,157.67,315.34
+119,2022-10-19,Canada,Laptops,HP Spectre,2,1638.69,3277.38
+120,2024-11-27,USA,Smartphones,iPhone 14,3,1067.76,3203.28
+121,2022-05-22,Canada,Televisions,LG OLED,4,648.82,2595.28
+122,2023-10-09,Mexico,Gaming Consoles,Steam Deck,1,310.32,310.32
+123,2023-09-18,USA,Smartphones,Samsung S23,4,910.47,3641.88
+124,2025-03-23,Canada,Smartphones,Samsung S23,3,790.18,2370.54
+125,2021-12-26,Canada,Audio Devices,JBL Charge 5,4,213.9,855.6
+126,2024-06-16,Mexico,Laptops,HP Spectre,3,879.59,2638.77
+127,2022-10-27,USA,Smartphones,iPhone 14,5,728.04,3640.2
+128,2021-09-29,USA,Smartphones,Samsung S23,4,1110.61,4442.44
+129,2022-09-24,USA,Laptops,HP Spectre,3,1458.96,4376.88
+130,2022-09-01,Canada,Audio Devices,Bose QC 45,2,293.18,586.36
+131,2023-11-29,Canada,Smartphones,OnePlus 11,2,1036.9,2073.8
+132,2021-03-30,Germany,Televisions,LG OLED,4,2310.26,9241.04
+133,2024-01-04,Mexico,Televisions,LG OLED,4,944.94,3779.76
+134,2024-07-28,Mexico,Gaming Consoles,PS5,1,438.58,438.58
+135,2025-02-03,Mexico,Gaming Consoles,Steam Deck,5,433.03,2165.15
+136,2021-06-16,USA,Gaming Consoles,Steam Deck,2,432.56,865.12
+137,2023-06-06,Mexico,Laptops,MacBook Air,5,1126.56,5632.8
+138,2022-08-07,Canada,Gaming Consoles,PS5,3,500.88,1502.64
+139,2021-06-04,Canada,Smartphones,OnePlus 11,3,849.3,2547.9
+140,2021-03-11,USA,Audio Devices,JBL Charge 5,1,311.18,311.18
+141,2022-02-14,UK,Gaming Consoles,PS5,4,546.87,2187.48
+142,2021-02-12,USA,Smartphones,iPhone 14,1,951.32,951.32
+143,2021-11-19,USA,Laptops,Lenovo ThinkPad,3,1511.78,4535.34
+144,2024-04-13,USA,Laptops,HP Spectre,3,1940.15,5820.45
+145,2024-10-27,USA,Smartphones,Samsung S23,4,1009.29,4037.16
+146,2025-03-21,Canada,Smartphones,Samsung S23,5,1081.31,5406.55
+147,2023-09-24,Mexico,Televisions,Sony Bravia,3,1238.63,3715.89
+148,2024-08-12,Mexico,Televisions,Sony Bravia,4,2305.19,9220.76
+149,2021-07-18,USA,Gaming Consoles,PS5,2,540.42,1080.84
+150,2024-04-14,Germany,Televisions,Samsung QLED,4,1688.09,6752.36
+151,2025-07-09,UK,Gaming Consoles,Xbox Series X,4,256.62,1026.48
+152,2023-12-14,Germany,Televisions,Samsung QLED,4,1104.81,4419.24
+153,2025-12-08,USA,Audio Devices,AirPods Pro,2,399.89,799.78
+154,2023-12-22,UK,Smartphones,Pixel 8,3,766.39,2299.17
+155,2022-07-21,Canada,Smartphones,Samsung S23,3,775.03,2325.09
+156,2022-03-10,USA,Televisions,Samsung QLED,1,1956.18,1956.18
+157,2024-06-26,Canada,Gaming Consoles,Steam Deck,1,562.34,562.34
+158,2025-06-13,Mexico,Smartphones,OnePlus 11,3,1044.48,3133.44
+159,2021-01-25,Germany,Audio Devices,Sony WH-1000XM5,5,137.96,689.8
+160,2024-02-16,Canada,Smartphones,Pixel 8,2,1001.51,2003.02
+161,2021-11-03,Germany,Televisions,Samsung QLED,3,1497.15,4491.45
+162,2025-10-30,USA,Gaming Consoles,PS5,4,518.29,2073.16
+163,2023-04-13,Canada,Gaming Consoles,Steam Deck,2,512.45,1024.9
+164,2023-01-15,Germany,Televisions,LG OLED,1,807.57,807.57
+165,2024-11-12,Canada,Smartphones,Samsung S23,4,1090.79,4363.16
+166,2025-02-21,Germany,Smartphones,Pixel 8,1,907.53,907.53
+167,2024-02-05,UK,Smartphones,Pixel 8,1,1109.82,1109.82
+168,2023-01-02,USA,Audio Devices,JBL Charge 5,2,366.18,732.36
+169,2023-03-01,USA,Smartphones,Pixel 8,3,1082.47,3247.41
+170,2024-09-13,Mexico,Televisions,Sony Bravia,3,2214.21,6642.63
+171,2022-03-20,USA,Televisions,Samsung QLED,3,996.29,2988.87
+172,2022-09-30,UK,Televisions,TCL 6-Series,4,2018.43,8073.72
+173,2024-03-29,Germany,Gaming Consoles,Xbox Series X,4,533.29,2133.16
+174,2023-09-19,USA,Televisions,LG OLED,3,928.84,2786.52
+175,2022-09-28,Canada,Televisions,TCL 6-Series,3,1688.03,5064.09
+176,2025-02-19,USA,Laptops,Lenovo ThinkPad,5,1101.23,5506.15
+177,2025-12-12,Germany,Televisions,LG OLED,1,1372.78,1372.78
+178,2021-06-01,USA,Televisions,LG OLED,4,1358.23,5432.92
+179,2023-01-11,USA,Smartphones,Pixel 8,1,1023.98,1023.98
+180,2024-01-20,Canada,Audio Devices,Sony WH-1000XM5,4,202.53,810.12
+181,2025-03-10,Canada,Smartphones,OnePlus 11,4,980.84,3923.36
+182,2023-06-10,UK,Laptops,Lenovo ThinkPad,3,1818.46,5455.38
+183,2023-11-02,Germany,Gaming Consoles,Steam Deck,1,459.71,459.71
+184,2021-11-13,USA,Smartphones,OnePlus 11,5,709.07,3545.35
+185,2023-03-15,Germany,Televisions,Samsung QLED,4,2007.74,8030.96
+186,2021-03-24,Canada,Televisions,LG OLED,5,1033.6,5168.0
+187,2025-03-10,UK,Laptops,MacBook Air,1,1991.22,1991.22
+188,2024-09-03,USA,Audio Devices,Bose QC 45,5,255.88,1279.4
+189,2022-12-27,Germany,Smartphones,OnePlus 11,4,734.45,2937.8
+190,2024-07-17,USA,Smartphones,Pixel 8,5,1156.68,5783.4
+191,2022-10-07,UK,Smartphones,OnePlus 11,3,875.61,2626.83
+192,2024-08-09,USA,Laptops,Dell XPS 13,3,1482.13,4446.39
+193,2022-06-02,Germany,Smartphones,Samsung S23,5,1176.33,5881.65
+194,2024-04-23,USA,Laptops,Lenovo ThinkPad,4,1944.94,7779.76
+195,2022-04-09,Germany,Laptops,MacBook Air,3,1551.82,4655.46
+196,2024-03-28,Canada,Smartphones,Pixel 8,5,826.59,4132.95
+197,2021-04-07,UK,Gaming Consoles,Xbox Series X,3,401.1,1203.3
+198,2023-09-15,Mexico,Gaming Consoles,PS5,3,536.18,1608.54
+199,2024-05-23,USA,Smartphones,Samsung S23,1,733.36,733.36
+200,2022-12-01,Mexico,Smartphones,Pixel 8,1,934.37,934.37
+201,2022-08-01,Germany,Audio Devices,Bose QC 45,5,255.3,1276.5
+202,2025-09-15,Canada,Gaming Consoles,PS5,3,367.92,1103.76
+203,2021-11-11,UK,Televisions,TCL 6-Series,3,1590.91,4772.73
+204,2021-01-26,UK,Televisions,Sony Bravia,5,1052.17,5260.85
+205,2024-06-08,UK,Audio Devices,JBL Charge 5,1,206.85,206.85
+206,2025-05-10,USA,Laptops,HP Spectre,4,1795.83,7183.32
+207,2025-07-01,USA,Audio Devices,AirPods Pro,5,343.15,1715.75
+208,2022-10-18,USA,Gaming Consoles,Xbox Series X,1,274.57,274.57
+209,2023-12-15,USA,Smartphones,Samsung S23,4,661.68,2646.72
+210,2023-08-05,USA,Televisions,LG OLED,1,1974.35,1974.35
+211,2021-06-22,Canada,Laptops,HP Spectre,1,1245.64,1245.64
+212,2025-07-28,USA,Televisions,Sony Bravia,4,1951.69,7806.76
+213,2023-08-13,Mexico,Smartphones,OnePlus 11,4,1115.61,4462.44
+214,2022-10-09,Canada,Laptops,HP Spectre,1,1109.49,1109.49
+215,2023-01-26,Canada,Audio Devices,JBL Charge 5,4,146.35,585.4
+216,2023-09-14,Canada,Laptops,HP Spectre,2,1589.03,3178.06
+217,2022-08-25,USA,Televisions,LG OLED,1,2312.85,2312.85
+218,2023-09-05,UK,Laptops,MacBook Air,1,1724.82,1724.82
+219,2021-10-20,Mexico,Smartphones,Pixel 8,1,766.23,766.23
+220,2022-10-23,Germany,Televisions,Sony Bravia,1,2387.82,2387.82
+221,2023-03-09,Mexico,Smartphones,iPhone 14,3,1145.05,3435.15
+222,2024-01-31,Germany,Smartphones,OnePlus 11,4,1058.61,4234.44
+223,2023-02-28,UK,Gaming Consoles,PS5,5,436.53,2182.65
+224,2022-07-23,USA,Smartphones,Pixel 8,1,821.62,821.62
+225,2022-01-31,USA,Gaming Consoles,Steam Deck,1,512.24,512.24
+226,2022-10-08,USA,Televisions,TCL 6-Series,1,1674.21,1674.21
+227,2024-06-09,Canada,Laptops,MacBook Air,4,815.11,3260.44
+228,2022-01-21,USA,Laptops,MacBook Air,1,1752.28,1752.28
+229,2023-01-29,USA,Televisions,Sony Bravia,5,1137.97,5689.85
+230,2022-11-26,USA,Gaming Consoles,Nintendo Switch,1,477.71,477.71
+231,2022-01-30,Mexico,Televisions,TCL 6-Series,4,2003.62,8014.48
+232,2024-02-11,UK,Audio Devices,Bose QC 45,4,473.41,1893.64
+233,2021-03-08,Canada,Smartphones,Pixel 8,3,756.18,2268.54
+234,2022-09-03,USA,Laptops,HP Spectre,1,1013.35,1013.35
+235,2022-05-02,Canada,Smartphones,Pixel 8,1,627.16,627.16
+236,2024-11-02,USA,Smartphones,Pixel 8,1,1094.33,1094.33
+237,2024-10-06,UK,Televisions,LG OLED,3,1453.26,4359.78
+238,2024-02-16,USA,Smartphones,Pixel 8,3,1032.32,3096.96
+239,2025-03-26,Mexico,Gaming Consoles,Steam Deck,3,281.93,845.79
+240,2022-04-28,UK,Smartphones,Pixel 8,2,882.19,1764.38
+241,2023-02-26,Mexico,Audio Devices,Bose QC 45,3,170.08,510.24
+242,2025-02-10,USA,Televisions,LG OLED,2,1888.83,3777.66
+243,2021-07-06,USA,Laptops,Lenovo ThinkPad,1,1892.82,1892.82
+244,2024-10-30,Mexico,Audio Devices,AirPods Pro,1,419.91,419.91
+245,2021-08-09,USA,Laptops,HP Spectre,3,1326.54,3979.62
+246,2021-05-09,Canada,Laptops,MacBook Air,3,803.16,2409.48
+247,2022-02-10,USA,Gaming Consoles,Xbox Series X,1,353.38,353.38
+248,2022-03-16,Canada,Laptops,MacBook Air,2,925.75,1851.5
+249,2024-03-07,USA,Gaming Consoles,Nintendo Switch,4,470.29,1881.16
+250,2025-08-21,UK,Laptops,MacBook Air,5,1656.98,8284.9
+251,2024-04-25,Mexico,Audio Devices,AirPods Pro,5,260.34,1301.7
+252,2025-10-09,Germany,Smartphones,iPhone 14,5,1195.06,5975.3
+253,2021-12-18,Canada,Gaming Consoles,Steam Deck,2,386.3,772.6
+254,2022-03-17,USA,Laptops,HP Spectre,1,1185.69,1185.69
+255,2025-04-27,Germany,Gaming Consoles,Nintendo Switch,4,495.68,1982.72
+256,2025-03-12,UK,Gaming Consoles,Nintendo Switch,1,502.77,502.77
+257,2023-08-08,USA,Smartphones,Pixel 8,1,1008.52,1008.52
+258,2022-12-10,USA,Televisions,Samsung QLED,1,1484.52,1484.52
+259,2021-03-02,Germany,Laptops,Lenovo ThinkPad,3,1863.66,5590.98
+260,2022-07-24,Mexico,Audio Devices,Sony WH-1000XM5,5,348.44,1742.2
+261,2025-10-02,Germany,Smartphones,iPhone 14,4,1000.92,4003.68
+262,2022-11-23,UK,Gaming Consoles,PS5,3,569.83,1709.49
+263,2024-06-25,Mexico,Televisions,LG OLED,1,2158.21,2158.21
+264,2024-12-13,Canada,Smartphones,Pixel 8,2,1114.21,2228.42
+265,2023-06-14,Canada,Smartphones,Pixel 8,3,841.07,2523.21
+266,2024-11-22,Mexico,Smartphones,Pixel 8,1,668.46,668.46
+267,2022-11-06,Germany,Smartphones,Samsung S23,5,975.18,4875.9
+268,2023-08-20,USA,Televisions,Sony Bravia,4,914.7,3658.8
+269,2023-12-02,USA,Audio Devices,JBL Charge 5,2,160.69,321.38
+270,2022-01-13,Mexico,Televisions,Sony Bravia,4,828.05,3312.2
+271,2024-01-08,Germany,Laptops,Lenovo ThinkPad,2,893.9,1787.8
+272,2021-11-21,UK,Laptops,HP Spectre,2,890.7,1781.4
+273,2022-08-28,Germany,Televisions,LG OLED,3,1457.0,4371.0
+274,2025-02-08,Germany,Laptops,HP Spectre,3,1612.16,4836.48
+275,2021-10-18,USA,Audio Devices,Sony WH-1000XM5,1,182.76,182.76
+276,2023-11-22,Mexico,Televisions,LG OLED,5,1049.96,5249.8
+277,2021-07-23,Mexico,Audio Devices,Bose QC 45,1,267.99,267.99
+278,2024-10-08,Canada,Televisions,TCL 6-Series,2,2299.22,4598.44
+279,2023-01-05,UK,Gaming Consoles,Steam Deck,4,296.88,1187.52
+280,2022-08-16,USA,Audio Devices,JBL Charge 5,5,234.8,1174.0
+281,2021-10-24,Canada,Gaming Consoles,Steam Deck,2,365.96,731.92
+282,2025-07-17,Mexico,Smartphones,Pixel 8,3,699.06,2097.18
+283,2023-07-09,UK,Televisions,LG OLED,4,1791.52,7166.08
+284,2023-09-11,Canada,Televisions,TCL 6-Series,5,1292.39,6461.95
+285,2021-10-23,USA,Gaming Consoles,Xbox Series X,5,564.69,2823.45
+286,2024-07-14,UK,Laptops,HP Spectre,3,1510.77,4532.31
+287,2022-06-23,UK,Audio Devices,AirPods Pro,2,428.28,856.56
+288,2023-09-23,UK,Audio Devices,JBL Charge 5,1,267.5,267.5
+289,2021-09-12,Canada,Audio Devices,JBL Charge 5,4,186.17,744.68
+290,2025-08-13,USA,Televisions,LG OLED,4,2281.21,9124.84
+291,2023-04-21,USA,Televisions,TCL 6-Series,3,1907.54,5722.62
+292,2022-01-29,Canada,Smartphones,Samsung S23,5,1200.0,6000.0
+293,2022-03-12,Mexico,Televisions,Samsung QLED,3,1132.78,3398.34
+294,2025-11-21,USA,Audio Devices,AirPods Pro,2,247.2,494.4
+295,2024-08-18,Germany,Gaming Consoles,PS5,3,482.31,1446.93
+296,2025-06-08,UK,Audio Devices,Bose QC 45,2,478.9,957.8
+297,2022-12-01,Germany,Gaming Consoles,Xbox Series X,2,493.84,987.68
+298,2025-05-01,Canada,Televisions,Sony Bravia,3,1497.01,4491.03
+299,2023-11-09,USA,Gaming Consoles,PS5,2,358.85,717.7
+300,2022-03-22,USA,Audio Devices,Bose QC 45,1,427.53,427.53
+301,2021-04-01,USA,Audio Devices,Sony WH-1000XM5,4,84.82,339.28
+302,2023-08-31,Mexico,Laptops,MacBook Air,3,1343.09,4029.27
+303,2022-08-19,Mexico,Gaming Consoles,Steam Deck,4,348.78,1395.12
+304,2021-11-13,UK,Smartphones,Pixel 8,4,927.21,3708.84
+305,2023-12-10,Canada,Gaming Consoles,PS5,1,495.96,495.96
+306,2024-09-12,Mexico,Gaming Consoles,Xbox Series X,3,551.08,1653.24
+307,2022-10-26,USA,Audio Devices,Sony WH-1000XM5,2,348.66,697.32
+308,2023-02-04,Canada,Televisions,Samsung QLED,1,2044.9,2044.9
+309,2024-03-12,USA,Gaming Consoles,Steam Deck,1,595.07,595.07
+310,2021-05-22,USA,Televisions,TCL 6-Series,3,2384.33,7152.99
+311,2025-05-15,Mexico,Smartphones,Samsung S23,4,912.24,3648.96
+312,2024-04-27,USA,Laptops,HP Spectre,5,1214.01,6070.05
+313,2025-11-03,Mexico,Televisions,TCL 6-Series,3,2213.3,6639.9
+314,2025-06-29,Germany,Smartphones,iPhone 14,3,654.48,1963.44
+315,2024-02-06,UK,Televisions,LG OLED,3,1293.4,3880.2
+316,2021-04-17,USA,Audio Devices,AirPods Pro,3,430.16,1290.48
+317,2024-05-20,USA,Gaming Consoles,Steam Deck,4,517.57,2070.28
+318,2024-12-24,Mexico,Smartphones,Samsung S23,4,1028.32,4113.28
+319,2022-02-09,Canada,Smartphones,OnePlus 11,4,714.6,2858.4
+320,2024-11-07,Germany,Laptops,Lenovo ThinkPad,2,1298.28,2596.56
+321,2023-02-13,USA,Smartphones,Samsung S23,4,979.89,3919.56
+322,2022-02-22,Canada,Gaming Consoles,Steam Deck,2,439.16,878.32
+323,2022-01-02,USA,Audio Devices,Bose QC 45,2,403.59,807.18
+324,2022-08-30,UK,Televisions,LG OLED,4,2012.43,8049.72
+325,2022-03-27,USA,Televisions,Sony Bravia,2,2194.1,4388.2
+326,2025-03-24,Germany,Televisions,TCL 6-Series,4,2247.72,8990.88
+327,2023-10-08,USA,Audio Devices,Sony WH-1000XM5,3,259.28,777.84
+328,2024-06-12,UK,Smartphones,OnePlus 11,4,1037.92,4151.68
+329,2021-05-29,Mexico,Smartphones,Pixel 8,3,602.21,1806.63
+330,2023-11-05,Canada,Audio Devices,Bose QC 45,3,316.03,948.09
+331,2021-07-18,UK,Laptops,Lenovo ThinkPad,3,1864.15,5592.45
+332,2023-09-21,Canada,Laptops,Dell XPS 13,3,1080.91,3242.73
+333,2023-09-03,Germany,Gaming Consoles,PS5,5,371.18,1855.9
+334,2021-09-05,USA,Televisions,Sony Bravia,4,1409.15,5636.6
+335,2021-07-31,Germany,Smartphones,OnePlus 11,2,969.62,1939.24
+336,2023-08-27,UK,Audio Devices,JBL Charge 5,4,326.04,1304.16
+337,2024-04-03,Canada,Gaming Consoles,Xbox Series X,3,330.35,991.05
+338,2022-04-05,Mexico,Smartphones,OnePlus 11,5,1064.87,5324.35
+339,2024-09-19,USA,Televisions,Sony Bravia,3,1892.89,5678.67
+340,2023-06-09,USA,Televisions,LG OLED,5,1699.86,8499.3
+341,2025-10-31,USA,Televisions,Sony Bravia,1,1938.41,1938.41
+342,2024-07-07,USA,Laptops,Lenovo ThinkPad,1,816.66,816.66
+343,2023-07-23,UK,Audio Devices,JBL Charge 5,4,477.42,1909.68
+344,2021-11-27,USA,Smartphones,OnePlus 11,5,1092.72,5463.6
+345,2022-05-03,Mexico,Laptops,MacBook Air,2,967.42,1934.84
+346,2021-05-08,UK,Gaming Consoles,Nintendo Switch,2,434.79,869.58
+347,2025-08-09,UK,Televisions,Sony Bravia,2,2107.52,4215.04
+348,2021-09-16,UK,Gaming Consoles,Nintendo Switch,5,555.2,2776.0
+349,2022-01-10,USA,Audio Devices,AirPods Pro,2,329.71,659.42
+350,2024-08-07,Canada,Televisions,LG OLED,2,2019.63,4039.26
+351,2023-11-24,Mexico,Smartphones,Samsung S23,1,1046.97,1046.97
+352,2023-03-06,Germany,Laptops,Lenovo ThinkPad,4,835.83,3343.32
+353,2022-11-07,USA,Audio Devices,AirPods Pro,5,245.37,1226.85
+354,2023-02-07,USA,Gaming Consoles,Steam Deck,5,425.5,2127.5
+355,2023-08-29,Mexico,Laptops,HP Spectre,5,1801.71,9008.55
+356,2023-10-13,USA,Smartphones,Pixel 8,3,1107.93,3323.79
+357,2022-03-07,USA,Televisions,LG OLED,3,1391.4,4174.2
+358,2025-02-24,USA,Laptops,Lenovo ThinkPad,1,1897.97,1897.97
+359,2021-10-02,Canada,Gaming Consoles,PS5,2,399.87,799.74
+360,2025-02-04,USA,Gaming Consoles,PS5,3,316.5,949.5
+361,2024-04-02,UK,Televisions,TCL 6-Series,2,1376.39,2752.78
+362,2022-09-12,Germany,Televisions,Samsung QLED,3,771.64,2314.92
+363,2024-03-20,UK,Smartphones,Pixel 8,4,833.39,3333.56
+364,2023-07-24,USA,Televisions,Sony Bravia,3,1933.64,5800.92
+365,2022-06-24,Mexico,Gaming Consoles,Nintendo Switch,1,396.77,396.77
+366,2023-08-10,USA,Laptops,Lenovo ThinkPad,1,1993.23,1993.23
+367,2021-02-15,Germany,Smartphones,Samsung S23,1,1120.99,1120.99
+368,2023-04-28,USA,Televisions,TCL 6-Series,4,2235.28,8941.12
+369,2022-07-03,USA,Laptops,Dell XPS 13,2,1108.8,2217.6
+370,2024-08-22,Mexico,Televisions,Sony Bravia,5,2069.93,10349.65
+371,2021-01-22,Mexico,Audio Devices,Bose QC 45,1,264.33,264.33
+372,2021-01-27,UK,Smartphones,iPhone 14,3,725.82,2177.46
+373,2021-06-08,USA,Laptops,MacBook Air,5,1186.87,5934.35
+374,2023-01-23,Canada,Televisions,TCL 6-Series,2,1205.88,2411.76
+375,2024-06-15,Mexico,Smartphones,iPhone 14,5,1122.14,5610.7
+376,2024-08-14,USA,Televisions,Samsung QLED,5,2471.48,12357.4
+377,2023-11-24,Germany,Audio Devices,AirPods Pro,3,358.25,1074.75
+378,2023-10-07,Canada,Televisions,Samsung QLED,1,1758.63,1758.63
+379,2021-06-19,USA,Audio Devices,Bose QC 45,3,145.87,437.61
+380,2022-06-05,Mexico,Smartphones,OnePlus 11,3,960.15,2880.45
+381,2021-12-21,UK,Televisions,LG OLED,5,1645.2,8226.0
+382,2022-10-09,USA,Audio Devices,Bose QC 45,4,450.63,1802.52
+383,2023-12-14,Canada,Televisions,Samsung QLED,1,1555.19,1555.19
+384,2025-07-17,Germany,Televisions,TCL 6-Series,2,1828.51,3657.02
+385,2023-05-08,Germany,Smartphones,Samsung S23,1,1038.75,1038.75
+386,2021-06-27,UK,Smartphones,Pixel 8,4,702.02,2808.08
+387,2025-04-27,USA,Audio Devices,Sony WH-1000XM5,5,330.29,1651.45
+388,2024-02-25,USA,Gaming Consoles,Steam Deck,3,577.53,1732.59
+389,2023-10-28,UK,Laptops,HP Spectre,3,1456.51,4369.53
+390,2021-07-21,USA,Laptops,HP Spectre,3,1330.39,3991.17
+391,2022-05-21,USA,Televisions,LG OLED,2,2097.36,4194.72
+392,2023-03-22,Canada,Audio Devices,Bose QC 45,3,359.89,1079.67
+393,2025-10-29,Canada,Audio Devices,JBL Charge 5,5,403.71,2018.55
+394,2023-11-21,UK,Televisions,LG OLED,3,1433.7,4301.1
+395,2022-06-04,USA,Audio Devices,Sony WH-1000XM5,3,372.87,1118.61
+396,2021-10-05,USA,Smartphones,Pixel 8,5,736.95,3684.75
+397,2024-10-05,Canada,Gaming Consoles,Xbox Series X,1,532.87,532.87
+398,2022-12-13,UK,Televisions,LG OLED,4,2251.47,9005.88
+399,2021-10-19,Germany,Gaming Consoles,Xbox Series X,3,586.61,1759.83
+400,2021-04-06,Canada,Laptops,HP Spectre,1,1110.94,1110.94
+401,2021-07-09,Germany,Televisions,TCL 6-Series,3,838.38,2515.14
+402,2023-10-15,USA,Televisions,Samsung QLED,4,1415.38,5661.52
+403,2025-06-09,UK,Smartphones,iPhone 14,1,1110.78,1110.78
+404,2024-06-24,USA,Audio Devices,AirPods Pro,4,145.01,580.04
+405,2025-05-06,Germany,Televisions,TCL 6-Series,4,993.92,3975.68
+406,2024-05-23,Germany,Laptops,HP Spectre,3,1852.66,5557.98
+407,2025-08-06,Mexico,Gaming Consoles,Nintendo Switch,5,569.41,2847.05
+408,2022-06-06,UK,Gaming Consoles,Xbox Series X,1,583.02,583.02
+409,2021-10-10,Germany,Televisions,Sony Bravia,4,1155.53,4622.12
+410,2022-11-01,Canada,Audio Devices,AirPods Pro,5,450.94,2254.7
+411,2021-01-29,Germany,Laptops,Lenovo ThinkPad,2,1400.6,2801.2
+412,2024-11-14,USA,Televisions,Sony Bravia,3,2325.63,6976.89
+413,2021-10-14,USA,Televisions,LG OLED,4,2455.11,9820.44
+414,2023-03-24,Canada,Audio Devices,AirPods Pro,4,170.43,681.72
+415,2023-01-08,UK,Audio Devices,Bose QC 45,4,91.83,367.32
+416,2023-04-19,USA,Televisions,Sony Bravia,5,1901.91,9509.55
+417,2022-06-10,Canada,Gaming Consoles,Steam Deck,4,476.49,1905.96
+418,2025-03-18,UK,Smartphones,iPhone 14,2,645.06,1290.12
+419,2023-04-29,USA,Televisions,Sony Bravia,5,1925.47,9627.35
+420,2025-02-07,Mexico,Gaming Consoles,PS5,4,593.94,2375.76
+421,2025-10-18,UK,Laptops,HP Spectre,3,1661.47,4984.41
+422,2025-02-16,Canada,Televisions,LG OLED,1,2448.87,2448.87
+423,2022-08-08,Germany,Televisions,LG OLED,4,775.25,3101.0
+424,2021-05-15,USA,Televisions,TCL 6-Series,5,2477.96,12389.8
+425,2025-12-04,USA,Audio Devices,Sony WH-1000XM5,1,305.15,305.15
+426,2024-06-29,USA,Gaming Consoles,Xbox Series X,3,408.32,1224.96
+427,2023-01-03,USA,Smartphones,OnePlus 11,5,887.66,4438.3
+428,2024-04-09,USA,Audio Devices,JBL Charge 5,4,282.34,1129.36
+429,2022-06-18,Mexico,Smartphones,Pixel 8,5,1169.98,5849.9
+430,2023-03-17,Germany,Gaming Consoles,Xbox Series X,3,531.26,1593.78
+431,2024-10-22,USA,Televisions,LG OLED,3,1146.09,3438.27
+432,2022-12-24,UK,Audio Devices,JBL Charge 5,4,99.25,397.0
+433,2022-05-26,USA,Laptops,HP Spectre,1,1400.53,1400.53
+434,2021-11-18,USA,Laptops,Lenovo ThinkPad,4,1410.28,5641.12
+435,2022-04-14,UK,Televisions,TCL 6-Series,2,2214.65,4429.3
+436,2024-03-31,USA,Gaming Consoles,Xbox Series X,3,582.74,1748.22
+437,2022-02-01,Germany,Laptops,Dell XPS 13,4,952.85,3811.4
+438,2025-03-18,Germany,Smartphones,Samsung S23,4,987.2,3948.8
+439,2023-11-07,Germany,Laptops,HP Spectre,5,935.7,4678.5
+440,2023-09-03,USA,Smartphones,Samsung S23,1,1056.9,1056.9
+441,2022-11-02,Mexico,Laptops,MacBook Air,2,992.2,1984.4
+442,2022-12-28,Germany,Laptops,Lenovo ThinkPad,2,1050.27,2100.54
+443,2021-08-11,USA,Laptops,MacBook Air,1,1254.48,1254.48
+444,2022-07-22,UK,Laptops,Lenovo ThinkPad,1,1729.45,1729.45
+445,2025-08-15,Mexico,Audio Devices,Sony WH-1000XM5,4,314.02,1256.08
+446,2024-11-05,Germany,Televisions,Sony Bravia,3,755.35,2266.05
+447,2024-12-06,UK,Televisions,Samsung QLED,4,1066.59,4266.36
+448,2022-10-16,Canada,Gaming Consoles,Nintendo Switch,5,557.45,2787.25
+449,2025-10-27,USA,Televisions,Samsung QLED,5,2492.27,12461.35
+450,2022-04-10,Mexico,Laptops,Lenovo ThinkPad,5,1983.97,9919.85
+451,2023-12-24,Germany,Smartphones,iPhone 14,4,923.8,3695.2
+452,2023-05-10,Mexico,Laptops,Lenovo ThinkPad,1,856.16,856.16
+453,2022-10-16,USA,Televisions,Sony Bravia,1,2103.34,2103.34
+454,2023-02-14,UK,Audio Devices,AirPods Pro,1,498.2,498.2
+455,2024-01-02,USA,Gaming Consoles,Xbox Series X,3,595.6,1786.8
+456,2022-09-09,UK,Gaming Consoles,Xbox Series X,4,259.7,1038.8
+457,2023-04-09,Mexico,Smartphones,Samsung S23,1,673.44,673.44
+458,2025-02-01,Germany,Smartphones,Pixel 8,1,778.73,778.73
+459,2024-04-21,UK,Televisions,TCL 6-Series,2,2200.4,4400.8
+460,2025-04-10,Canada,Gaming Consoles,Xbox Series X,4,341.51,1366.04
+461,2021-06-27,UK,Smartphones,Pixel 8,2,722.89,1445.78
+462,2025-05-03,Mexico,Televisions,LG OLED,4,1584.88,6339.52
+463,2023-03-15,Germany,Audio Devices,JBL Charge 5,2,383.94,767.88
+464,2021-12-15,Mexico,Gaming Consoles,PS5,1,519.13,519.13
+465,2022-01-13,Germany,Laptops,MacBook Air,1,924.79,924.79
+466,2025-04-10,Canada,Laptops,MacBook Air,2,1333.72,2667.44
+467,2022-02-06,USA,Televisions,TCL 6-Series,5,2377.62,11888.1
+468,2024-05-25,USA,Gaming Consoles,Steam Deck,4,370.98,1483.92
+469,2022-07-19,USA,Audio Devices,Sony WH-1000XM5,3,419.46,1258.38
+470,2025-12-18,Mexico,Audio Devices,JBL Charge 5,4,259.47,1037.88
+471,2025-06-22,UK,Audio Devices,JBL Charge 5,2,238.01,476.02
+472,2021-02-13,USA,Gaming Consoles,Xbox Series X,5,521.99,2609.95
+473,2024-10-04,USA,Laptops,Lenovo ThinkPad,2,1339.16,2678.32
+474,2021-12-03,USA,Smartphones,iPhone 14,5,694.01,3470.05
+475,2024-10-27,Mexico,Gaming Consoles,Xbox Series X,3,579.12,1737.36
+476,2021-02-06,UK,Televisions,LG OLED,1,1789.41,1789.41
+477,2024-01-01,Mexico,Gaming Consoles,Nintendo Switch,3,527.05,1581.15
+478,2025-06-21,USA,Smartphones,OnePlus 11,3,1002.77,3008.31
+479,2023-08-12,Germany,Televisions,TCL 6-Series,2,1873.54,3747.08
+480,2022-09-11,UK,Smartphones,Samsung S23,4,875.22,3500.88
+481,2021-03-18,Canada,Televisions,Sony Bravia,3,1239.44,3718.32
+482,2024-04-30,USA,Smartphones,Pixel 8,5,1104.62,5523.1
+483,2022-02-23,Mexico,Audio Devices,AirPods Pro,3,382.71,1148.13
+484,2023-07-15,USA,Gaming Consoles,PS5,2,498.33,996.66
+485,2025-08-23,Canada,Smartphones,iPhone 14,4,918.57,3674.28
+486,2021-11-08,Germany,Audio Devices,Bose QC 45,2,315.41,630.82
+487,2024-03-19,UK,Televisions,Samsung QLED,4,1564.29,6257.16
+488,2022-06-14,USA,Smartphones,Samsung S23,5,1049.37,5246.85
+489,2023-02-18,Canada,Televisions,LG OLED,2,2017.4,4034.8
+490,2025-01-19,Mexico,Gaming Consoles,Steam Deck,1,412.93,412.93
+491,2022-05-19,USA,Televisions,TCL 6-Series,3,1846.27,5538.81
+492,2024-09-02,Canada,Laptops,Lenovo ThinkPad,2,1496.23,2992.46
+493,2021-12-11,UK,Laptops,MacBook Air,4,1667.89,6671.56
+494,2023-11-11,Germany,Smartphones,Pixel 8,3,821.69,2465.07
+495,2024-12-29,USA,Audio Devices,AirPods Pro,5,371.02,1855.1
+496,2022-07-30,Mexico,Televisions,Samsung QLED,4,2204.64,8818.56
+497,2023-06-02,USA,Smartphones,OnePlus 11,3,863.18,2589.54
+498,2021-09-01,Canada,Gaming Consoles,Xbox Series X,5,443.06,2215.3
+499,2022-03-02,UK,Audio Devices,Sony WH-1000XM5,2,348.76,697.52
+500,2024-10-01,Germany,Televisions,LG OLED,3,2039.11,6117.33
+501,2021-02-01,USA,Smartphones,iPhone 14,2,1068.84,2137.68
+502,2023-04-03,Mexico,Gaming Consoles,Nintendo Switch,3,512.25,1536.75
+503,2022-09-17,Canada,Televisions,TCL 6-Series,4,1776.3,7105.2
+504,2025-07-10,UK,Gaming Consoles,ps5,3,512.5,1537.5
+505,2024-11-19,USA,Laptops,Lenovo ThinkPad,5,1559.62,7798.1
+506,2023-01-19,Germany,Televisions,Sony Bravia,2,1733.44,3466.88
+507,2022-02-19,USA,Audio Devices,JBL Charge 5,3,287.31,861.93
+508,2021-08-25,Mexico,Smartphones,Samsung S23,2,887.15,1774.3
+509,2024-03-05,Canada,Laptops,MacBook Air,4,1455.29,5821.16
+510,2023-10-19,UK,Smartphones,Pixel 8,2,974.31,1948.62
+511,2024-02-23,USA,Televisions,Samsung QLED,1,2222.51,2222.51
+512,2021-12-08,USA,Televisions,LG OLED,2,1987.33,3974.66
+513,2025-01-08,Canada,Gaming Consoles,PS5,1,379.12,379.12
+514,2022-04-02,Germany,Laptops,HP Spectre,5,1825.71,9128.55
+515,2021-10-17,UK,Audio Devices,AirPods Pro,2,277.03,554.06
+516,2023-02-25,USA,Smartphones,Pixel 8,5,874.12,4370.6
+517,2024-01-22,Mexico,Televisions,Sony Bravia,3,1422.88,4268.64
+518,2023-05-23,USA,Laptops,Lenovo ThinkPad,1,1134.58,1134.58
+519,2022-08-03,Canada,Smartphones,iPhone 14,4,1162.78,4651.12
+520,2024-08-20,UK,Televisions,TCL 6-Series,5,1316.47,6582.35
+521,2025-02-09,USA,Gaming Consoles,Steam Deck,2,558.45,1116.9
+522,2021-09-24,Germany,Audio Devices,Bose QC 45,2,439.88,879.76
+523,2022-05-25,USA,Smartphones,Samsung S23,3,820.99,2462.97
+524,2024-05-03,Mexico,Televisions,Samsung QLED,4,1764.28,7057.12
+525,2023-04-06,Canada,Laptops,Lenovo ThinkPad,4,1101.22,4404.88
+526,2021-11-01,USA,Televisions,TCL 6-Series,5,1444.74,7223.7
+527,2022-01-15,UK,Gaming Consoles,Xbox Series X,2,359.99,719.98
+528,2022-09-16,Canada,Televisions,LG OLED,2,1492.8,2985.6
+529,2024-06-07,Germany,Smartphones,Pixel 8,4,1171.55,4686.2
+530,2021-05-21,USA,Gaming Consoles,Nintendo Switch,3,589.22,1767.66
+531,2022-11-15,Canada,Audio Devices,Sony WH-1000XM5,2,403.28,806.56
+532,2023-12-29,Mexico,Smartphones,OnePlus 11,5,1029.47,5147.35
+533,2024-03-26,USA,Laptops,Dell XPS 13,3,1288.49,3865.47
+534,2021-07-14,UK,Televisions,Sony Bravia,5,1681.52,8407.6
+535,2023-05-27,Canada,Smartphones,Pixel 8,1,1108.33,1108.33
+536,2024-11-09,USA,Laptops,MacBook Air,5,1583.98,7919.9
+537,2022-06-15,USA,Gaming Consoles,PS5,4,553.16,2212.64
+538,2021-03-23,Germany,Laptops,Lenovo ThinkPad,3,1804.8,5414.4
+539,2024-01-27,USA,Audio Devices,JBL Charge 5,3,311.44,934.32
+540,2023-10-17,Mexico,Gaming Consoles,Xbox Series X,5,428.33,2141.65
+541,2021-04-10,Canada,Televisions,Samsung QLED,2,1962.62,3925.24
+542,2023-02-23,UK,Smartphones,Samsung S23,4,1021.81,4087.24
+543,2021-12-28,Germany,Gaming Consoles,Steam Deck,4,363.87,1455.48
+544,2024-03-21,Mexico,Televisions,TCL 6-Series,2,1433.48,2866.96
+545,2022-08-09,USA,Audio Devices,AirPods Pro,1,424.84,424.84
+546,2025-09-09,Mexico,Laptops,HP Spectre,2,1982.61,3965.22
+547,2021-06-09,UK,Televisions,TCL 6-Series,5,2124.63,10623.15
+548,2022-03-18,USA,Televisions,LG OLED,3,1676.4,5029.2
+549,2023-09-28,Germany,Laptops,Dell XPS 13,5,1155.97,5779.85
+550,2021-08-07,Canada,Laptops,Dell XPS 13,3,1008.1,3024.3
+551,2024-10-26,Canada,Gaming Consoles,PS5,1,524.89,524.89
+552,2021-02-26,Germany,Smartphones,OnePlus 11,5,1187.84,5939.2
+553,2023-05-28,USA,Smartphones,Pixel 8,2,1009.13,2018.26
+554,2024-02-10,USA,Televisions,Sony Bravia,3,1901.55,5704.65
+555,2022-09-18,Canada,Gaming Consoles,Xbox Series X,3,321.66,964.98
+556,2025-12-22,UK,Smartphones,iPhone 14,1,1180.84,1180.84
+557,2021-11-05,Mexico,Laptops,Lenovo ThinkPad,1,1129.15,1129.15
+558,2021-05-19,USA,Smartphones,Samsung S23,4,674.55,2698.2
+559,2024-09-10,Germany,Televisions,Samsung QLED,2,2160.8,4321.6
+560,2022-11-18,USA,Audio Devices,Bose QC 45,4,246.65,986.6
+561,2023-12-21,Canada,Smartphones,Samsung S23,1,1023.94,1023.94
+562,2021-01-19,UK,Laptops,Lenovo ThinkPad,3,1933.42,5800.26
+563,2022-04-30,Germany,Televisions,LG OLED,5,820.49,4102.45
+564,2025-09-28,USA,Audio Devices,Sony WH-1000XM5,4,102.85,411.4
+565,2021-06-16,Germany,Gaming Consoles,PS5,3,265.2,795.6
+566,2022-02-20,UK,Smartphones,Samsung S23,5,950.61,4753.05
+567,2025-05-11,Germany,Laptops,MacBook Air,3,1014.74,3044.22
+568,2024-12-01,USA,Televisions,Samsung QLED,1,1870.46,1870.46
+569,2023-07-02,Mexico,Audio Devices,Sony WH-1000XM5,5,331.13,1655.65
+570,2022-07-11,Mexico,Televisions,Samsung QLED,2,1048.19,2096.38
+571,2024-07-18,Canada,Smartphones,Pixel 8,4,978.97,3915.88
+572,2022-06-26,UK,Laptops,MacBook Air,1,1234.72,1234.72
+573,2023-01-09,USA,Audio Devices,AirPods Pro,4,196.36,785.44
+574,2024-02-13,USA,Televisions,TCL 6-Series,2,1886.3,3772.6
+575,2021-03-28,Canada,Gaming Consoles,Xbox Series X,5,361.48,1807.4
+576,2025-11-14,UK,Audio Devices,Bose QC 45,3,143.77,431.31
+577,2021-09-22,Germany,Smartphones,Pixel 8,5,637.39,3186.95
+578,2023-05-04,Germany,Televisions,TCL 6-Series,1,1777.41,1777.41
+579,2023-10-24,USA,Smartphones,Pixel 8,3,787.69,2363.07
+580,2024-09-22,Mexico,Smartphones,OnePlus 11,2,955.89,1911.78
+581,2021-04-11,Mexico,Gaming Consoles,PS5,2,532.65,1065.3
+582,2023-11-28,UK,Gaming Consoles,Steam Deck,1,556.81,556.81
+583,2025-06-11,Canada,Gaming Consoles,Nintendo Switch,4,387.95,1551.8
+584,2022-11-28,USA,Laptops,Dell XPS 13,3,1705.77,5117.31
+585,2024-06-27,Germany,Audio Devices,Sony WH-1000XM5,3,469.03,1407.09
+586,2022-02-03,UK,Televisions,Sony Bravia,4,1602.33,6409.32
+587,2024-11-30,Germany,Smartphones,Samsung S23,2,909.2,1818.4
+588,2022-10-12,USA,Gaming Consoles,Steam Deck,5,417.95,2089.75
+589,2023-09-16,USA,Gaming Consoles,Xbox Series X,3,392.46,1177.38
+590,2021-08-06,Canada,Smartphones,Pixel 8,4,671.25,2685.0
+591,2023-04-25,USA,Televisions,LG OLED,2,1125.75,2251.5
+592,2024-03-14,Canada,Smartphones,iPhone 14,5,934.26,4671.3
+593,2021-02-28,UK,Laptops,HP Spectre,1,1299.63,1299.63
+594,2022-09-22,USA,Televisions,Samsung QLED,3,928.72,2786.16
+595,2023-05-20,Germany,Audio Devices,JBL Charge 5,5,396.83,1984.15
+596,2022-12-21,Mexico,Laptops,Dell XPS 13,4,1277.5,5110.0
+597,2021-08-03,USA,Laptops,MacBook Air,5,1497.9,7489.5
+598,2022-06-01,USA,Smartphones,Pixel 8,1,786.03,786.03
+599,2025-09-18,UK,Smartphones,OnePlus 11,3,1181.39,3544.17
+600,2023-06-01,Canada,Televisions,LG OLED,3,2133.07,6399.21
+601,2024-12-15,Mexico,Audio Devices,JBL Charge 5,1,281.27,281.27
+602,2023-07-20,USA,Smartphones,Samsung S23,5,746.95,3734.75
+603,2021-10-13,Canada,Gaming Consoles,PS5,3,350.54,1051.62
+604,2021-01-17,Germany,Televisions,TCL 6-Series,4,1644.2,6576.8
+605,2022-05-28,UK,Smartphones,Pixel 8,4,984.01,3936.04
+606,2024-10-09,Germany,Gaming Consoles,Nintendo Switch,1,509.27,509.27
+607,2024-09-21,Canada,Televisions,Sony Bravia,5,892.67,4463.35
+608,2023-01-13,USA,Audio Devices,Bose QC 45,2,269.88,539.76
+609,2025-07-27,USA,Televisions,TCL 6-Series,4,1963.74,7854.96
+610,2021-07-30,Mexico,Laptops,HP Spectre,1,927.06,927.06
+611,2025-10-23,Canada,Laptops,Dell XPS 13,2,1578.17,3156.34
+612,2022-10-06,Mexico,Smartphones,OnePlus 11,5,681.57,3407.85
+613,2023-02-10,USA,Laptops,HP Spectre,3,1377.86,4133.58
+614,2022-03-01,Germany,Televisions,Samsung QLED,5,1394.48,6972.4
+615,2024-11-03,Mexico,Audio Devices,AirPods Pro,5,142.29,711.45
+616,2023-12-27,Canada,Smartphones,Pixel 8,3,921.19,2763.57
+617,2023-06-28,Germany,Gaming Consoles,PS5,1,419.59,419.59
+618,2022-01-20,Germany,Smartphones,Samsung S23,5,1130.17,5650.85
+619,2025-09-08,UK,Televisions,LG OLED,2,1670.77,3341.54
+620,2024-09-08,USA,Smartphones,Pixel 8,2,903.35,1806.7
+621,2021-02-05,Canada,Laptops,MacBook Air,1,1083.5,1083.5
+622,2022-12-16,USA,Gaming Consoles,Nintendo Switch,3,477.03,1431.09
+623,2024-08-08,UK,Gaming Consoles,Steam Deck,4,572.05,2288.2
+624,2021-12-24,Mexico,Televisions,TCL 6-Series,2,1708.55,3417.1
+625,2022-06-11,Germany,Gaming Consoles,Xbox Series X,3,368.24,1104.72
+626,2025-02-13,USA,Laptops,MacBook Air,5,1882.77,9413.85
+627,2023-07-25,USA,Audio Devices,Sony WH-1000XM5,5,451.11,2255.55
+628,2022-07-04,UK,Smartphones,Pixel 8,5,897.49,4487.45
+629,2023-10-18,Canada,Televisions,LG OLED,1,1355.9,1355.9
+630,2023-03-14,USA,Audio Devices,JBL Charge 5,5,449.51,2247.55
+631,2025-06-02,Germany,Smartphones,Samsung S23,4,784.18,3136.72
+632,2024-05-11,USA,Gaming Consoles,Nintendo Switch,4,557.4,2229.6
+633,2021-03-26,Mexico,Laptops,MacBook Air,4,954.96,3819.84
+634,2022-10-28,Canada,Gaming Consoles,Xbox Series X,5,337.56,1687.8
+635,2022-05-06,USA,Smartphones,Samsung S23,3,1110.23,3330.69
+636,2023-03-20,UK,Gaming Consoles,Xbox Series X,2,346.77,693.54
+637,2021-09-23,USA,Televisions,TCL 6-Series,2,1847.51,3695.02
+638,2025-01-02,Mexico,Audio Devices,AirPods Pro,1,121.68,121.68
+639,2022-06-09,Germany,Televisions,Sony Bravia,3,2098.01,6294.03
+640,2021-12-05,Canada,Smartphones,OnePlus 11,2,1041.5,2083.0
+641,2024-10-11,Germany,Laptops,Lenovo ThinkPad,5,1468.36,7341.8
+642,2023-09-20,Mexico,Smartphones,Pixel 8,4,1087.45,4349.8
+643,2023-12-05,USA,Audio Devices,AirPods Pro,3,448.03,1344.09
+644,2022-09-05,USA,Smartphones,Samsung S23,2,897.18,1794.36
+645,2023-11-30,Canada,Laptops,MacBook Air,3,899.27,2697.81
+646,2023-02-01,UK,Televisions,Samsung QLED,3,1548.76,4646.28
+647,2022-10-25,USA,Gaming Consoles,Xbox Series X,4,519.45,2077.8
+648,2024-02-03,USA,Televisions,LG OLED,3,2246.38,6739.14
+649,2021-06-11,Germany,Laptops,HP Spectre,4,1945.74,7782.96
+650,2024-04-22,USA,Smartphones,Pixel 8,2,1044.95,2089.9
+651,2021-07-27,UK,Smartphones,OnePlus 11,2,1096.39,2192.78
+652,2023-10-11,Mexico,Televisions,TCL 6-Series,5,1942.0,9710.0
+653,2022-07-10,Canada,Gaming Consoles,Nintendo Switch,4,519.74,2078.96
+654,2021-08-29,USA,Audio Devices,Bose QC 45,4,152.23,608.92
+655,2022-12-17,Mexico,Smartphones,iPhone 14,1,1208.1,1208.1
+656,2022-02-25,USA,Televisions,Sony Bravia,2,2213.77,4427.54
+657,2024-05-13,Germany,Smartphones,OnePlus 11,3,990.12,2970.36
+658,2022-08-10,Germany,Televisions,TCL 6-Series,2,2392.44,4784.88
+659,2021-04-21,Canada,Laptops,Lenovo ThinkPad,3,1355.93,4067.79
+660,2024-09-07,UK,Audio Devices,Sony WH-1000XM5,3,323.13,969.39
+661,2025-01-28,USA,Laptops,HP Spectre,1,904.33,904.33
+662,2022-01-12,USA,Smartphones,Pixel 8,2,1045.88,2091.76
+663,2023-06-03,Mexico,Laptops,MacBook Air,2,1952.68,3905.36
+664,2024-02-27,UK,Smartphones,Pixel 8,3,786.41,2359.23
+665,2023-02-09,USA,Laptops,Dell XPS 13,2,1832.71,3665.42
+666,2024-03-11,USA,Gaming Consoles,PS5,1,500.84,500.84
+667,2024-10-03,Mexico,Televisions,LG OLED,3,2181.26,6543.78
+668,2025-05-17,Canada,Smartphones,Samsung S23,5,1122.92,5614.6
+669,2021-11-04,UK,Televisions,TCL 6-Series,2,1650.09,3300.18
+670,2022-04-06,USA,Smartphones,Pixel 8,3,1109.13,3327.39
+671,2023-09-29,Germany,Laptops,Lenovo ThinkPad,1,1340.67,1340.67
+672,2024-07-10,USA,Televisions,Sony Bravia,4,1496.04,5984.16
+673,2022-06-03,Mexico,Televisions,TCL 6-Series,1,865.12,865.12
+674,2021-09-07,USA,Audio Devices,AirPods Pro,3,248.71,746.13
+675,2025-02-18,Germany,Smartphones,Samsung S23,1,1130.67,1130.67
+676,2023-07-17,Canada,Smartphones,Pixel 8,5,690.12,3450.6
+677,2024-09-15,USA,Laptops,MacBook Air,4,1357.29,5429.16
+678,2022-03-03,Canada,Laptops,Dell XPS 13,3,1197.86,3593.58
+679,2023-03-19,USA,Televisions,Samsung QLED,2,1876.93,3753.86
+680,2021-10-30,Germany,Televisions,Sony Bravia,5,1421.11,7105.55
+681,2024-11-01,UK,Smartphones,Pixel 8,4,1028.61,4114.44
+682,2022-06-13,USA,Gaming Consoles,Steam Deck,3,555.92,1667.76
+683,2021-05-23,Canada,Audio Devices,JBL Charge 5,4,275.71,1102.84
+684,2023-05-01,Germany,Laptops,MacBook Air,2,1899.88,3799.76
+685,2022-08-14,Mexico,Gaming Consoles,PS5,2,412.21,824.42
+686,2024-01-16,USA,Smartphones,OnePlus 11,5,963.57,4817.85
+687,2021-12-01,UK,Gaming Consoles,Nintendo Switch,4,507.88,2031.52
+688,2023-10-04,Canada,Televisions,Samsung QLED,5,1507.66,7538.3
+689,2022-03-25,USA,Televisions,LG OLED,1,1172.21,1172.21
+690,2025-08-10,USA,Gaming Consoles,PS5,2,398.78,797.56
+691,2021-07-20,Canada,Laptops,HP Spectre,2,1132.57,2265.14
+692,2024-07-24,Germany,Televisions,TCL 6-Series,4,1389.19,5556.76
+693,2023-05-14,USA,Audio Devices,Bose QC 45,2,355.91,711.82
+694,2022-01-07,UK,Smartphones,iPhone 14,1,740.96,740.96
+695,2023-08-16,Mexico,Smartphones,Pixel 8,3,693.75,2081.25
+696,2024-09-18,Canada,Smartphones,Pixel 8,1,1100.41,1100.41
+697,2025-04-05,USA,Televisions,Sony Bravia,3,1887.27,5661.81
+698,2022-02-07,Germany,Gaming Consoles,Steam Deck,5,479.27,2396.35
+699,2023-12-18,USA,Laptops,Lenovo ThinkPad,4,1577.13,6308.52
+700,2021-05-11,Mexico,Laptops,MacBook Air,5,1773.85,8869.25
+701,2022-07-26,Canada,Audio Devices,Sony WH-1000XM5,1,498.77,498.77
+702,2023-11-10,Germany,Televisions,LG OLED,3,799.5,2398.5
+703,2024-02-08,USA,Gaming Consoles,PS5,3,520.4,1561.2
+704,2021-02-18,UK,Televisions,Samsung QLED,2,1108.85,2217.7
+705,2022-12-30,Mexico,Smartphones,Samsung S23,1,1124.45,1124.45
+706,2023-04-30,USA,Audio Devices,Sony WH-1000XM5,4,181.58,726.32
+707,2024-05-30,Canada,Smartphones,Pixel 8,2,789.3,1578.6
+708,2021-08-20,Germany,Laptops,Dell XPS 13,5,1054.21,5271.05
+709,2022-06-20,USA,Gaming Consoles,Nintendo Switch,5,395.7,1978.5
+710,2025-09-22,Germany,Laptops,MacBook Air,4,1321.63,5286.52
+711,2023-09-06,Mexico,Televisions,Sony Bravia,1,1439.43,1439.43
+712,2021-03-05,USA,Televisions,Sony Bravia,5,1944.85,9724.25
+713,2022-10-03,Germany,Laptops,Lenovo ThinkPad,5,1980.86,9904.3
+714,2023-06-16,USA,Smartphones,Pixel 8,4,706.43,2825.72
+715,2024-11-23,UK,Laptops,Dell XPS 13,3,1453.07,4359.21
+716,2022-02-05,Canada,Televisions,Sony Bravia,1,1930.9,1930.9
+717,2021-06-15,USA,Smartphones,Samsung S23,2,1034.37,2068.74
+718,2022-12-02,Mexico,Audio Devices,AirPods Pro,4,255.06,1020.24
+719,2023-05-30,Mexico,Smartphones,iPhone 14,5,885.4,4427.0
+720,2024-09-09,USA,Laptops,MacBook Air,1,1530.4,1530.4
+721,2023-10-06,Canada,Gaming Consoles,PS5,5,422.78,2113.9
+722,2021-01-30,Germany,Audio Devices,JBL Charge 5,3,99.99,299.97
+723,2022-04-07,Germany,Smartphones,Pixel 8,1,1087.36,1087.36
+724,2023-12-17,USA,Televisions,LG OLED,2,2380.84,4761.68
+725,2024-01-11,Germany,Gaming Consoles,PS5,4,474.2,1896.8
+726,2022-06-16,UK,Gaming Consoles,Xbox Series X,3,339.97,1019.91
+727,2023-03-23,UK,Smartphones,Pixel 8,2,1025.53,2051.06
+728,2024-03-16,Mexico,Laptops,HP Spectre,1,1697.12,1697.12
+729,2025-08-03,Canada,Televisions,TCL 6-Series,5,1536.47,7682.35
+730,2023-09-07,USA,Audio Devices,Bose QC 45,4,381.45,1525.8
+731,2021-09-20,USA,Televisions,Samsung QLED,3,1205.61,3616.83
+732,2022-01-28,USA,Televisions,TCL 6-Series,4,2200.2,8800.8
+733,2024-12-02,Mexico,Gaming Consoles,PS5,1,285.9,285.9
+734,2022-10-11,Canada,Smartphones,Pixel 8,3,1048.53,3145.59
+735,2021-07-25,Germany,Televisions,LG OLED,4,1049.17,4196.68
+736,2023-08-15,UK,Audio Devices,Sony WH-1000XM5,4,281.6,1126.4
+737,2021-01-11,USA,Laptops,MacBook Air,4,1302.13,5208.52
+738,2022-05-05,Germany,Laptops,MacBook Air,2,1404.97,2809.94
+739,2021-10-01,USA,Smartphones,iPhone 14,1,796.05,796.05
+740,2023-02-06,Mexico,Gaming Consoles,Steam Deck,1,528.27,528.27
+741,2024-06-21,Canada,Smartphones,Pixel 8,5,1007.96,5039.8
+742,2022-07-19,UK,Televisions,Samsung QLED,3,1865.82,5597.46
+743,2021-04-19,USA,Televisions,LG OLED,3,2102.7,6308.1
+744,2025-02-26,USA,Gaming Consoles,Xbox Series X,2,331.17,662.34
+745,2022-03-14,Germany,Smartphones,Pixel 8,5,949.2,4746.0
+746,2023-10-01,USA,Gaming Consoles,Xbox Series X,3,401.3,1203.9
+747,2024-02-26,Germany,Televisions,TCL 6-Series,1,1478.1,1478.1
+748,2024-10-24,Canada,Televisions,Sony Bravia,1,1018.52,1018.52
+749,2025-09-17,Mexico,Smartphones,Pixel 8,1,1115.5,1115.5
+750,2023-07-08,USA,Audio Devices,AirPods Pro,2,215.5,431.0
+

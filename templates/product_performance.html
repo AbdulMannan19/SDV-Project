@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Performance - Marketing Analysis</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .nav {
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+
+        .nav a:hover,
+        .nav a.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .section {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .viz-container {
+            width: 100%;
+            min-height: 400px;
+        }
+
+        .insight-box {
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .insight-box h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Product Performance</h1>
+        <p>Category-level marketing effectiveness analysis</p>
+    </div>
+
+    <div class="nav">
+        <a href="/">Dashboard</a>
+        <a href="/roi-analysis">ROI Deep Dive</a>
+        <a href="/product-performance" class="active">Product Performance</a>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>ROI by Product Category</h2>
+            <p style="color: #666; margin-bottom: 1rem;">Compare marketing effectiveness across different product lines
+            </p>
+            <div class="viz-container" id="category-chart"></div>
+        </div>
+
+        <div class="section">
+            <h2>Key Insights</h2>
+            <div id="insights-container"></div>
+        </div>
+
+        <div class="section">
+            <h2>Category Performance Details</h2>
+            <div id="category-table"></div>
+        </div>
+
+        <div class="section">
+            <h2>Campaign Type Effectiveness</h2>
+            <div id="campaign-type-table"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>CSCE 5320 Scientific Data Visualization - Project 2</p>
+    </div>
+
+    <script>
+        // Load category chart
+        fetch('/api/viz/category-bar')
+            .then(res => res.text())
+            .then(html => {
+                const container = document.getElementById('category-chart');
+                container.innerHTML = html;
+
+                // Extract and execute scripts (innerHTML doesn't auto-execute scripts)
+                const scripts = container.getElementsByTagName('script');
+                for (let script of scripts) {
+                    const newScript = document.createElement('script');
+                    newScript.type = 'text/javascript';
+                    if (script.src) {
+                        newScript.src = script.src;
+                    } else {
+                        newScript.textContent = script.textContent;
+                    }
+                    document.body.appendChild(newScript);
+                }
+            });
+
+        // Load category data and generate insights
+        fetch('/api/roi/category')
+            .then(res => res.json())
+            .then(data => {
+                data.sort((a, b) => b.ROI - a.ROI);
+
+                const best = data[0];
+                const worst = data[data.length - 1];
+
+                let insights = `
+                    <div class="insight-box">
+                        <h3>🏆 Best Performing Category</h3>
+                        <p><strong>${best.ProductCategory}</strong> shows the highest ROI at ${best.ROI.toFixed(2)}% with $${best.Revenue.toLocaleString()} in revenue from $${best.Marketing_Spend.toLocaleString()} in marketing spend.</p>
+                    </div>
+                    <div class="insight-box">
+                        <h3>📊 Improvement Opportunity</h3>
+                        <p><strong>${worst.ProductCategory}</strong> has the lowest ROI at ${worst.ROI.toFixed(2)}%. Consider optimizing campaign strategies or reallocating budget to higher-performing categories.</p>
+                    </div>
+                `;
+
+                document.getElementById('insights-container').innerHTML = insights;
+
+                let table = '<table style="width: 100%; border-collapse: collapse;">';
+                table += '<thead><tr style="background: #667eea; color: white;"><th style="padding: 1rem; text-align: left;">Category</th><th style="padding: 1rem; text-align: right;">Revenue</th><th style="padding: 1rem; text-align: right;">Marketing Spend</th><th style="padding: 1rem; text-align: right;">ROI</th></tr></thead>';
+                table += '<tbody>';
+                data.forEach((row, i) => {
+                    const bgColor = i % 2 === 0 ? '#f9f9f9' : 'white';
+                    table += `<tr style="background: ${bgColor};">`;
+                    table += `<td style="padding: 1rem;">${row.ProductCategory}</td>`;
+                    table += `<td style="padding: 1rem; text-align: right;">$${row.Revenue.toLocaleString('en-US', { maximumFractionDigits: 2 })}</td>`;
+                    table += `<td style="padding: 1rem; text-align: right;">$${row.Marketing_Spend.toLocaleString('en-US', { maximumFractionDigits: 2 })}</td>`;
+                    table += `<td style="padding: 1rem; text-align: right; color: ${row.ROI >= 0 ? 'green' : 'red'}; font-weight: bold;">${row.ROI.toFixed(2)}%</td>`;
+                    table += '</tr>';
+                });
+                table += '</tbody></table>';
+                document.getElementById('category-table').innerHTML = table;
+            });
+
+        // Load campaign type data
+        fetch('/api/roi/campaign-type')
+            .then(res => res.json())
+            .then(data => {
+                data.sort((a, b) => b.ROI - a.ROI);
+
+                let table = '<table style="width: 100%; border-collapse: collapse;">';
+                table += '<thead><tr style="background: #764ba2; color: white;"><th style="padding: 1rem; text-align: left;">Campaign Type</th><th style="padding: 1rem; text-align: right;">Revenue</th><th style="padding: 1rem; text-align: right;">Marketing Spend</th><th style="padding: 1rem; text-align: right;">ROI</th></tr></thead>';
+                table += '<tbody>';
+                data.forEach((row, i) => {
+                    const bgColor = i % 2 === 0 ? '#f9f9f9' : 'white';
+                    table += `<tr style="background: ${bgColor};">`;
+                    table += `<td style="padding: 1rem;">${row.Campaign_Type}</td>`;
+                    table += `<td style="padding: 1rem; text-align: right;">$${row.Revenue.toLocaleString('en-US', { maximumFractionDigits: 2 })}</td>`;
+                    table += `<td style="padding: 1rem; text-align: right;">$${row.Marketing_Spend.toLocaleString('en-US', { maximumFractionDigits: 2 })}</td>`;
+                    table += `<td style="padding: 1rem; text-align: right; color: ${row.ROI >= 0 ? 'green' : 'red'}; font-weight: bold;">${row.ROI.toFixed(2)}%</td>`;
+                    table += '</tr>';
+                });
+                table += '</tbody></table>';
+                document.getElementById('campaign-type-table').innerHTML = table;
+            });
+    </script>
+</body>
+
+</html>

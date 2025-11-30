@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test</title>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        .test { margin: 20px 0; padding: 15px; border: 1px solid #ddd; }
+        .success { background: #d4edda; }
+        .error { background: #f8d7da; }
+    </style>
+</head>
+<body>
+    <h1>API Test Page</h1>
+    
+    <div class="test" id="test-summary">
+        <h3>Testing /api/summary</h3>
+        <pre id="summary-result">Loading...</pre>
+    </div>
+    
+    <div class="test" id="test-region">
+        <h3>Testing /api/roi/region</h3>
+        <pre id="region-result">Loading...</pre>
+    </div>
+    
+    <div class="test" id="test-viz">
+        <h3>Testing /api/viz/campaign-bar</h3>
+        <div id="viz-result">Loading...</div>
+    </div>
+    
+    <script>
+        // Test summary API
+        fetch('/api/summary')
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('summary-result').textContent = JSON.stringify(data, null, 2);
+                document.getElementById('test-summary').classList.add('success');
+            })
+            .catch(err => {
+                document.getElementById('summary-result').textContent = 'Error: ' + err;
+                document.getElementById('test-summary').classList.add('error');
+            });
+        
+        // Test region API
+        fetch('/api/roi/region')
+            .then(res => res.json())
+            .then(data => {
+                document.getElementById('region-result').textContent = JSON.stringify(data, null, 2);
+                document.getElementById('test-region').classList.add('success');
+            })
+            .catch(err => {
+                document.getElementById('region-result').textContent = 'Error: ' + err;
+                document.getElementById('test-region').classList.add('error');
+            });
+        
+        // Test visualization
+        fetch('/api/viz/campaign-bar')
+            .then(res => res.text())
+            .then(html => {
+                document.getElementById('viz-result').innerHTML = html;
+                document.getElementById('test-viz').classList.add('success');
+            })
+            .catch(err => {
+                document.getElementById('viz-result').textContent = 'Error: ' + err;
+                document.getElementById('test-viz').classList.add('error');
+            });
+    </script>
+</body>
+</html>

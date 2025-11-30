@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROI Deep Dive - Marketing Analysis</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .nav {
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #667eea;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+
+        .nav a:hover,
+        .nav a.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .section {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .viz-container {
+            width: 100%;
+            min-height: 500px;
+        }
+
+        .filters {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .filter-group label {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 0.3rem;
+        }
+
+        .filter-group select {
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>ROI Deep Dive</h1>
+        <p>Explore marketing effectiveness across regions and campaigns</p>
+    </div>
+
+    <div class="nav">
+        <a href="/">Dashboard</a>
+        <a href="/roi-analysis" class="active">ROI Deep Dive</a>
+        <a href="/product-performance">Product Performance</a>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h2>Geographic ROI Distribution</h2>
+            <p style="color: #666; margin-bottom: 1rem;">Interactive map showing ROI performance by country</p>
+            <div class="viz-container" id="choropleth-map"></div>
+        </div>
+
+        <div class="section">
+            <h2>Marketing Spend vs Revenue Analysis</h2>
+            <p style="color: #666; margin-bottom: 1rem;">Scatter plot comparing investment to returns by campaign type
+            </p>
+            <div class="viz-container" id="scatter-plot"></div>
+        </div>
+
+        <div class="section">
+            <h2>Regional Performance Breakdown</h2>
+            <div id="region-table"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>CSCE 5320 Scientific Data Visualization - Project 2</p>
+    </div>
+
+    <script>
+        // Load choropleth map
+        fetch('/api/viz/choropleth')
+            .then(res => res.text())
+            .then(html => {
+                const container = document.getElementById('choropleth-map');
+                container.innerHTML = html;
+
+                // Extract and execute scripts (innerHTML doesn't auto-execute scripts)
+                const scripts = container.getElementsByTagName('script');
+                for (let script of scripts) {
+                    const newScript = document.createElement('script');
+                    newScript.type = 'text/javascript';
+                    if (script.src) {
+                        newScript.src = script.src;
+                    } else {
+                        newScript.textContent = script.textContent;
+                    }
+                    document.body.appendChild(newScript);
+                }
+            });
+
+        // Load scatter plot
+        fetch('/api/viz/scatter')
+            .then(res => res.text())
+            .then(html => {
+                const container = document.getElementById('scatter-plot');
+                container.innerHTML = html;
+
+                // Extract and execute scripts (innerHTML doesn't auto-execute scripts)
+                const scripts = container.getElementsByTagName('script');
+                for (let script of scripts) {
+                    const newScript = document.createElement('script');
+                    newScript.type = 'text/javascript';
+                    if (script.src) {
+                        newScript.src = script.src;
+                    } else {
+                        newScript.textContent = script.textContent;
+                    }
+                    document.body.appendChild(newScript);
+                }
+            });
+
+        // Load region data table
+        fetch('/api/roi/region')
+            .then(res => res.json())
+            .then(data => {
+                let table = '<table style="width: 100%; border-collapse: collapse;">';
+                table += '<thead><tr style="background: #667eea; color: white;"><th style="padding: 1rem; text-align: left;">Country</th><th style="padding: 1rem; text-align: right;">Revenue</th><th style="padding: 1rem; text-align: right;">Marketing Spend</th><th style="padding: 1rem; text-align: right;">ROI</th></tr></thead>';
+                table += '<tbody>';
+                data.forEach((row, i) => {
+                    const bgColor = i % 2 === 0 ? '#f9f9f9' : 'white';
+                    table += `<tr style="background: ${bgColor};">`;
+                    table += `<td style="padding: 1rem;">${row.Country}</td>`;
+                    table += `<td style="padding: 1rem; text-align: right;">$${row.Revenue.toLocaleString('en-US', { maximumFractionDigits: 2 })}</td>`;
+                    table += `<td style="padding: 1rem; text-align: right;">$${row.Marketing_Spend.toLocaleString('en-US', { maximumFractionDigits: 2 })}</td>`;
+                    table += `<td style="padding: 1rem; text-align: right; color: ${row.ROI >= 0 ? 'green' : 'red'};">${row.ROI.toFixed(2)}%</td>`;
+                    table += '</tr>';
+                });
+                table += '</tbody></table>';
+                document.getElementById('region-table').innerHTML = table;
+            });
+    </script>
+</body>
+
+</html>
